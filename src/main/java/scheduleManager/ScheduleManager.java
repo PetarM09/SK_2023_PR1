@@ -168,7 +168,7 @@ public abstract class ScheduleManager {
         Scanner scanner = new Scanner(System.in);
         List<Date> listaDatuma = new ArrayList<>();
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        /*try {
+        try {
             listaDatuma.add(format.parse(scanner.nextLine()));
             listaDatuma.add(format.parse(scanner.nextLine()));
             System.out.println("Unesite datume koje zelite da izuzmete (END za kraj):");
@@ -179,7 +179,7 @@ public abstract class ScheduleManager {
             }
         } catch (ParseException e) {
             throw new RuntimeException(e);
-        }*/
+        }
         System.out.println("Unesite putanju do fajla:");
         String csvFile = scanner.nextLine();
 
