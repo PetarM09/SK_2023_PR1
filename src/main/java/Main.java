@@ -7,6 +7,7 @@ public class Main {
         scheduleManagerImp.initializeSchedule();
         //scheduleManagerImp.loadScheduleFromJSONFile();
         scheduleManagerImp.loadScheduleFromCSVFile();
+        scheduleManagerImp.saveToPDF("src/main/resources/izlaz.pdf");
         /*for(var x : scheduleManagerImp.getSchedule().getSchedule().entrySet()){
             System.out.println(x.getKey());
             for(var y : x.getValue()){

@@ -52,12 +52,12 @@ public class Event {
     @Override
     public String toString() {
         return "Event{" +
-                "date=" + date +
-                ", room=" + room +
-                ", startTime=" + startTime +
-                ", endTime=" + endTime +
-                ", dayOfWeek=" + dayOfWeek +
-                ", additionalData=" + additionalData +
+                "datum=" + date +
+                ", ucionica=" + room.getName() +
+                ", vreme pocetka=" + startTime +
+                ", vreme kraja=" + endTime +
+                ", dan u nedelji=" + dayOfWeek +
+                 additionalData +
                 '}';
     }
 }

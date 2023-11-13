@@ -3,6 +3,10 @@ package scheduleManager;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
@@ -134,8 +138,18 @@ public abstract class ScheduleManager {
         //Room:Vremepocetka:Datum
         //Soba123,2023-10-15,08:00,10:00,nedelja,Matematika,Profesor X,Predavanje,GrupaA,Dodatne informacije1:2, Dodatna informacija 2:5
 
-        Event event = parser(input);
+        Event toUpdate = findEvent(input);
 
+        System.out.println("Unesite izmenjen event: \n");
+        Scanner scanner = new Scanner(System.in);
+        String izmenjenEvent = scanner.nextLine();
+
+        Event novi = parser(izmenjenEvent);
+
+        List<Event> lista = this.schedule.getSchedule().get(toUpdate.getDayOfWeek());
+        lista.remove(toUpdate);
+        lista.add(novi);
+        this.schedule.getSchedule().put(novi.getDayOfWeek(), lista);
 
     }
     public void addRoom(String input){
@@ -212,7 +226,7 @@ public abstract class ScheduleManager {
         return event;
     }
 
-    public boolean loadScheduleFromCSVFile(){
+    public void loadScheduleFromCSVFile(){
         schedule = new Schedule();
         Scanner scanner = new Scanner(System.in);
         List<Date> listaDatuma = new ArrayList<>();
@@ -269,10 +283,9 @@ public abstract class ScheduleManager {
         } catch (IOException | CsvException e) {
             e.printStackTrace();
         }
-        return false;
     }
 
-    public boolean loadScheduleFromJSONFile() {
+    public void loadScheduleFromJSONFile() {
         schedule = new Schedule();
         Scanner scanner = new Scanner(System.in);
         Event event = null;
@@ -317,11 +330,41 @@ public abstract class ScheduleManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        return false;
     }
+
+    public void saveToPDF(String filePath) {
+        try {
+            Document document = new Document();
+            PdfWriter.getInstance(document, new FileOutputStream(filePath));
+            document.open();
+
+            // Dodajte naslov
+            document.add(new Paragraph("Raspored"));
+
+            // Dodajte podatke o rasporedu u PDF
+            for (Map.Entry<DayOfWeek, List<Event>> entry : schedule.getSchedule().entrySet()) {
+                document.add(new Paragraph("\n" + entry.getKey().toString()));
+                for (Event event : entry.getValue()) {
+                    document.add(new Paragraph(event.getRoom().getName() + " | " +
+                            event.getStartTime() + "-" + event.getEndTime() + " | " +
+                            "Predmet: " + event.getAdditionalData().get("Predmet") + " | " +
+                            "Tip: " + event.getAdditionalData().get("Tip") + " | " +
+                            "Nastavnik: " + event.getAdditionalData().get("Nastavnik") + " | " +
+                            "Grupe: " + event.getAdditionalData().get("Grupe")));
+                }
+            }
+            document.close();
+        } catch (DocumentException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public Schedule getSchedule(){
         return schedule;
     }
+
+
+
+
 }
