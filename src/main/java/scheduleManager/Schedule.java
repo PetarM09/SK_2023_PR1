@@ -18,6 +18,13 @@ public class Schedule {
 
     public Schedule() {
         this.schedule = new HashMap<>();
+        this.schedule.put(DayOfWeek.MONDAY, new ArrayList<>());
+        this.schedule.put(DayOfWeek.TUESDAY, new ArrayList<>());
+        this.schedule.put(DayOfWeek.WEDNESDAY, new ArrayList<>());
+        this.schedule.put(DayOfWeek.THURSDAY, new ArrayList<>());
+        this.schedule.put(DayOfWeek.FRIDAY, new ArrayList<>());
+        this.schedule.put(DayOfWeek.SATURDAY, new ArrayList<>());
+        this.schedule.put(DayOfWeek.SUNDAY, new ArrayList<>());
     }
 
     public Map<DayOfWeek, List<Event>> getSchedule() {

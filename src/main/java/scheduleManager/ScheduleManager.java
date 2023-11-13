@@ -1,5 +1,8 @@
 package scheduleManager;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
@@ -134,10 +137,7 @@ public abstract class ScheduleManager {
         Event event = parser(input);
 
 
-
     }
-
-
     public void addRoom(String input){
         ///Soba123,capacity
         ///Soba123,capacity, Dodatne informacije1:2, Dodatna informacija 2:5
@@ -163,8 +163,7 @@ public abstract class ScheduleManager {
             }
     }
 
-    public boolean loadScheduleFromFile(){
-        schedule = new Schedule();
+    private List<Date> getDatesAndExceptedDays(){
         Scanner scanner = new Scanner(System.in);
         List<Date> listaDatuma = new ArrayList<>();
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -180,6 +179,44 @@ public abstract class ScheduleManager {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+        return listaDatuma;
+    }
+
+    private Event createEventFromFile(String ucionica, String dan, String termin, Map<String, String> additionalData){
+        Event event = null;
+        Room room = new Room();
+        room.setName(ucionica);
+        Date date = new Date();
+
+        if(termin.contains("-")) {
+            String[] token = termin.split("-");
+            if (token[0].contains(":") && !token[0].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
+                token[0] = token[0].concat(":00");
+            } else if (!token[0].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
+                token[0] = token[0].concat(":00:00");
+            }
+            if (token[1].contains(":") && !token[1].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
+                token[1] = token[1].concat(":00");
+            } else if (!token[1].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
+                token[1] = token[1].concat(":00:00");
+            }
+            Time startTime = Time.valueOf(token[0]);
+            Time endTime = Time.valueOf(token[1]);
+            event = new Event(room, startTime, endTime, DayOfWeek.valueOf(dan));
+            HashMap<String, String> map = (HashMap<String, String>) event.getAdditionalData();
+            map.putAll(additionalData);
+            System.out.println(event);
+
+
+        }
+        return event;
+    }
+
+    public boolean loadScheduleFromCSVFile(){
+        schedule = new Schedule();
+        Scanner scanner = new Scanner(System.in);
+        List<Date> listaDatuma = new ArrayList<>();
+        listaDatuma = getDatesAndExceptedDays();
         System.out.println("Unesite putanju do fajla:");
         String csvFile = scanner.nextLine();
 
@@ -197,7 +234,7 @@ public abstract class ScheduleManager {
                 line = line.replace("[", "");
                 line = line.replace("]", "");
                 String[] parts = line.split(";");
-                if(!csv){
+                if (!csv) {
                     head = parts;
                     csv = true;
                     continue;
@@ -222,56 +259,65 @@ public abstract class ScheduleManager {
                     additionalData.put(head[i], parts[i]);
                 }
 
-                Room room = new Room();
-                room.setName(ucionica);
-                Date date = new Date();
-                if(termin.contains("-")) {
-                    String[] token = termin.split("-");
-                    if (token[0].contains(":") && !token[0].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
-                        token[0] = token[0].concat(":00");
-                    } else if (!token[0].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
-                        token[0] = token[0].concat(":00:00");
-                    }
-                    if (token[1].contains(":") && !token[1].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
-                        token[1] = token[1].concat(":00");
-                    } else if (!token[1].matches("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) {
-                        token[1] = token[1].concat(":00:00");
-                    }
-                    Time startTime = Time.valueOf(token[0]);
-                    Time endTime = Time.valueOf(token[1]);
-                    event = new Event(room, startTime, endTime, DayOfWeek.valueOf(dan));
-                    HashMap<String, String> map = (HashMap<String, String>) event.getAdditionalData();
-                    map.putAll(additionalData);
-                    if (schedule.getSchedule().get(event.getDayOfWeek()) == null) {
-                        List<Event> lista = new ArrayList<>();
-                        lista.add(event);
-                        schedule.getSchedule().put(event.getDayOfWeek(), lista);
-                    } else {
-                        List<Event> lista = schedule.getSchedule().get(event.getDayOfWeek());
-                        lista.add(event);
-                        schedule.getSchedule().put(event.getDayOfWeek(), lista);
-                    }
+                event = createEventFromFile(ucionica, dan, termin, additionalData);
 
-                }
+                List<Event> lista = schedule.getSchedule().get(event.getDayOfWeek());
+                lista.add(event);
+                schedule.getSchedule().put(event.getDayOfWeek(), lista);
+
             }
         } catch (IOException | CsvException e) {
             e.printStackTrace();
         }
-        boolean flag = false;
-        /*try {
-            File file = new File(filePath);
-            BufferedReader reader = new BufferedReader(new FileReader(file)); //TODO
+        return false;
+    }
 
-            String line;
-            while((x = reader.readLine()) != null){
-                if(!flag){
-                    flag = true;
+    public boolean loadScheduleFromJSONFile() {
+        schedule = new Schedule();
+        Scanner scanner = new Scanner(System.in);
+        Event event = null;
 
-                }
+        List<Date> listaDatuma = new ArrayList<>();
+        listaDatuma = getDatesAndExceptedDays();
+
+        System.out.println("Unesite putanju do JSON fajla:");
+        String jsonFile = scanner.nextLine();
+        Map<String, String> additionalData = new HashMap<>();
+
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode rootNode = objectMapper.readTree(new File(jsonFile));
+
+            // Prikupljanje datuma
+            ArrayNode eventsArray = (ArrayNode) rootNode;
+            List<String> fieldsNames = new ArrayList<>();
+            for (Iterator<String> it = eventsArray.get(0).fieldNames(); it.hasNext(); ) {
+                String x = it.next();
+                fieldsNames.add(x);
             }
+
+            // Prikupljanje događaja
+            for (JsonNode eventNode : eventsArray) {
+                additionalData.clear();
+
+
+                String ucionica = eventNode.get(fieldsNames.get(0)).asText();
+                String dan = eventNode.get(fieldsNames.get(1)).asText();
+                String termin = eventNode.get(fieldsNames.get(2)).asText();
+
+                for (int i = 3; i < fieldsNames.size(); i++) {
+                    additionalData.put(fieldsNames.get(i), eventNode.get(fieldsNames.get(i)).asText());
+                }
+                event = createEventFromFile(ucionica, dan, termin, additionalData);
+                List<Event> lista = schedule.getSchedule().get(event.getDayOfWeek());
+                lista.add(event);
+                schedule.getSchedule().put(event.getDayOfWeek(), lista);
+            }
+
         } catch (IOException e) {
-            throw new RuntimeException(e);
-        }*/
+            e.printStackTrace();
+        }
+
         return false;
     }
 
