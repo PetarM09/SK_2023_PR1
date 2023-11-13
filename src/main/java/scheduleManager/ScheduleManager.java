@@ -359,6 +359,43 @@ public abstract class ScheduleManager {
         }
     }
 
+    //Provera da li konkretan termin vec postoji
+    public boolean doesEventExist(String input){
+
+        if (findEvent(input) != null){
+            System.out.println("Termin koji ste uneli je zauzet.\n");
+            return true;
+        }
+
+        return false;
+    }
+
+    //Pretrazivanje termina po additionalData podacima
+    public List searchAdditionalData(String input){
+        //Ocekuje se format Key:Value
+
+        String[] parts = input.split(":");
+        List<Event> found = new ArrayList<>();
+
+        //mapa svih eventova
+        Map mapa = schedule.getSchedule();
+
+        for (Map.Entry<DayOfWeek, List<Event>> entry: schedule.getSchedule().entrySet()){
+            //Lista eventova za taj dan
+            List<Event> listaZaDan = entry.getValue();
+
+                for (Event event : listaZaDan){
+                    //Additional data za event
+                    Map<String, String > data = event.getAdditionalData();
+
+                    //Sadrzi onaj additional data po kom se pretrazuje
+                    if (data.containsKey(parts[0])){
+                        found.add(event);
+                    }
+                }
+        }
+        return found;
+    }
 
     public Schedule getSchedule(){
         return schedule;
