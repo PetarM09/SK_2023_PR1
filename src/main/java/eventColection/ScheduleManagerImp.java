@@ -76,9 +76,8 @@ public class ScheduleManagerImp extends ScheduleManager {
                     additionalData.put(fieldsNames.get(i), eventNode.get(fieldsNames.get(i)).asText());
                 }
                 event = createEventFromFile(date, ucionica, dan, termin, additionalData);
-                List<Event> lista = schedule.getSchedule();
-                lista.add(event);
-                schedule.getSchedule().addAll(lista);
+                schedule.getSchedule().add(event);
+
             }
 
         } catch (IOException e) {
@@ -141,8 +140,6 @@ public class ScheduleManagerImp extends ScheduleManager {
 
                 event = createEventFromFile(date, ucionica, dan, termin, additionalData);
 
-                List<Event> lista = schedule.getSchedule();
-                lista.add(event);
                 schedule.getSchedule().add(event);
 
             }
