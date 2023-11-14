@@ -1,5 +1,10 @@
 package scheduleManager;
 
+import com.fasterxml.jackson.core.PrettyPrinter;
+import com.fasterxml.jackson.core.exc.StreamWriteException;
+import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.PageSize;
@@ -7,6 +12,7 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.opencsv.CSVWriter;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,12 +31,8 @@ public abstract class ScheduleManager {
     protected List<Room>rooms = new ArrayList<>();
     protected String input;
     protected static Schedule schedule;
-    public abstract boolean isRoomOccupied(Room room, Date date, Time startTime, Time endTime);
-    public abstract boolean isEventOccupied(Event event);
-    public abstract boolean saveScheduleToFile(String filePath);
-    public abstract boolean saveScheduleToCSV(String filePath);
-    public abstract void loadScheduleFromJSONFile();
-    public abstract void loadScheduleFromCSVFile();
+    protected abstract void loadScheduleFromJSONFile();
+    protected abstract void loadScheduleFromCSVFile();
 
     protected static Schedule initializeSchedule(){
         if (schedule == null) {
@@ -42,7 +44,7 @@ public abstract class ScheduleManager {
         return schedule;
     }
 
-    protected Event parser(String input){
+    private Event parser(String input){
         // Primer formata stringa: "Soba123,2023-10-15,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5"
         // Primer formata stringa: "Soba123,2023-10-15,08:00,2,Dodatne informacije1:2, Dodatna informacija 2:5"
         // Primer formata stringa: "Soba123,2023-10-15,08:00,10:00"
@@ -126,9 +128,7 @@ public abstract class ScheduleManager {
 
     public boolean addEvent(String input) {
         Event event = parser(input);
-        List<Event> lista = this.schedule.getSchedule();
-        lista.add(event);
-        this.schedule.getSchedule().add(event);
+        schedule.getSchedule().add(event);
         return true;
     }
 
@@ -238,10 +238,11 @@ public abstract class ScheduleManager {
         Scanner scanner = new Scanner(System.in);
         List<Event> events = null;
         String kriterijum = scanner.nextLine();
+
         if(kriterijum.equals("1"))
-            schedule.sortByDate();
+            return new ArrayList<>(schedule.sortByDate());
         else if (kriterijum.equals("2")) {
-            schedule.sortByDayOfWeekDay();
+            return new ArrayList<>(schedule.sortByDayOfWeekDay());
         } else if (kriterijum.equals("3")) {
             System.out.println("Unesite pocetni datum: ");
             String pocetniDatum = scanner.nextLine();
@@ -250,31 +251,133 @@ public abstract class ScheduleManager {
             DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             Date pocetak = format.parse(pocetniDatum);
             Date kraj = format.parse(krajnjiDatum);
-            events = new ArrayList<>(schedule.scheduleFromDateToDate(pocetak, kraj));
+            return new ArrayList<>(schedule.scheduleFromDateToDate(pocetak, kraj));
         } else if (kriterijum.equals("4")) {
             System.out.println("Unesite kriterijum: ");
             String kriterijum1 = scanner.nextLine();
-            events = new ArrayList<>(schedule.sortByAdditionalData(kriterijum1));
+            return new ArrayList<>(schedule.sortByAdditionalData(kriterijum1));
         }
         return events;
     }
 
-    public void saveToPDF(String filePath) {
+    public void loadScheduleFromFile(){
+        System.out.println("Kog formata je raspored koji zelite da ucitate?");
+        System.out.println("1. JSON");
+        System.out.println("2. CSV");
+        Scanner scanner = new Scanner(System.in);
+        String format = scanner.nextLine();
+        System.out.println("Unesite putanju do fajla: ");
+        if(format.equals("1"))
+            loadScheduleFromJSONFile();
+        else if(format.equals("2"))
+            loadScheduleFromCSVFile();
+    }
+
+    public void saveSchedule(){
+        System.out.println("U koji format zelite da sacuvate raspored?");
+        System.out.println("1. JSON");
+        System.out.println("2. CSV");
+        System.out.println("3. PDF");
+        Scanner scanner = new Scanner(System.in);
+        String format = scanner.nextLine();
+        System.out.println("Unesite putanju do fajla: ");
+        if(format.equals("1"))
+            saveToJson(scanner.nextLine());
+        else if(format.equals("2"))
+            saveToCsv(scanner.nextLine());
+        else if(format.equals("3"))
+            saveToPDF(scanner.nextLine());
+    }
+    private void saveToJson(String filePath){
+        try {
+            List<Event> events = printCriteria();
+
+            if(events == null)
+                events = schedule.getSchedule();
+
+            ObjectMapper objectMapper = new ObjectMapper();
+            ArrayNode arrayNode = objectMapper.createArrayNode();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+
+            for (Event event : events) {
+                ObjectNode formattedJson = objectMapper.createObjectNode();
+                if(event.getDate() != null)
+                    formattedJson.put("Datum", dateFormat.format(event.getDate()));
+                formattedJson.put("Učionica", event.getRoom().getName());
+                formattedJson.put("Dan u nedelji", event.getDayOfWeek().toString());
+                formattedJson.put("Termi", event.getStartTime() + "-" + event.getEndTime());
+                for(int i = 0; i < event.getAdditionalData().keySet().size(); i++){
+                    formattedJson.put(event.getAdditionalData().keySet().toArray()[i].toString(), event.getAdditionalData().values().toArray()[i].toString());
+                }
+                arrayNode.add(formattedJson);
+            }
+            ObjectWriter objectWriter = objectMapper.writer().with(SerializationFeature.INDENT_OUTPUT);
+            objectWriter.writeValue(new File(filePath), arrayNode);
+        } catch (ParseException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void saveToCsv(String filePath) {
+        try{
+            File file = new File(filePath);
+            file.getParentFile().mkdirs();
+            CSVWriter writer = new CSVWriter(new FileWriter(filePath));
+            List<String> head = new ArrayList<>();
+            if(schedule.getSchedule().get(0).getDate() != null) {
+                head.add("Datum");
+            }
+            head.add("Ucionica");
+            head.add("Dan u nedelji");
+            head.add("Vreme");
+
+            head.addAll(schedule.getSchedule().get(0).getAdditionalData().keySet());
+
+            List<Event> events = printCriteria();
+
+            if(events == null)
+                events = schedule.getSchedule();
+
+            writer.writeNext(head.toArray(new String[0]));
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+            for (Event event : events) {
+                int i=0;
+                String[] rowData = new String[head.size()];
+                if(event.getDate() != null) {
+                    rowData[i++] = dateFormat.format(event.getDate());
+                }
+                rowData[i++] = event.getRoom().getName();
+                rowData[i++] = event.getDayOfWeek().toString();
+                rowData[i++] = event.getStartTime().toString() + "-" + event.getEndTime().toString();
+                for (String value : event.getAdditionalData().values()) {
+                    rowData[i] = value;
+                    i++;
+                }
+                writer.writeNext(rowData);
+            }
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void saveToPDF(String filePath) {
         try {
             Document document = new Document(PageSize.A4.rotate());
             PdfWriter.getInstance(document, new FileOutputStream(filePath));
             document.open();
 
             document.add(new Paragraph("Raspored"));
-            for(var x : schedule.getSchedule())
-                System.out.println(x);
             List<String> head = new ArrayList<>();
             if(schedule.getSchedule().get(0).getDate() != null) {
                 head.add("Datum");
             }
             head.add("Ucionica");
-            head.add("Vreme");
             head.add("Dan u nedelji");
+            head.add("Vreme");
+
 
             PdfPTable table = new PdfPTable(head.size() + schedule.getSchedule().get(0).getAdditionalData().keySet().size());
             head.addAll(schedule.getSchedule().get(0).getAdditionalData().keySet());
@@ -289,16 +392,17 @@ public abstract class ScheduleManager {
             if(events == null)
                 events = schedule.getSchedule();
 
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
             for (Event event : events) {
                 PdfPCell cell;
                 if (event.getDate() != null) {
-                    table.addCell(new Paragraph(event.getDate().toString()));
+                    table.addCell(new Paragraph(dateFormat.format(event.getDate())));
                 }
                 cell = new PdfPCell(new Paragraph(event.getRoom().getName()));
                 table.addCell(cell);
-                cell = new PdfPCell(new Paragraph(event.getStartTime().toString() + "-" + event.getEndTime().toString()));
-                table.addCell(cell);
                 cell = new PdfPCell(new Paragraph(event.getDayOfWeek().toString()));
+                table.addCell(cell);
+                cell = new PdfPCell(new Paragraph(event.getStartTime().toString() + "-" + event.getEndTime().toString()));
                 table.addCell(cell);
                 for (String value : event.getAdditionalData().values()) {
                     cell = new PdfPCell(new Paragraph(value));
@@ -315,11 +419,8 @@ public abstract class ScheduleManager {
             throw new RuntimeException(e);
         }
     }
-    public Schedule getSchedule(){
-        return schedule;
-    }
 
-    public boolean doesEventExist(String input){
+    private boolean doesEventExist(String input){
 
         if (findEvent(input) != null){
             System.out.println("Termin koji ste uneli je zauzet.\n");

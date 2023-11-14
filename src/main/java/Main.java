@@ -1,30 +1,36 @@
-import eventColection.ScheduleManagerImp;
-import scheduleManager.ScheduleManager;
+//import eventColection.ScheduleManagerImp;
+
+import weeklyColection.ScheduleManagerImp;
 
 public class Main {
     public static void main(String[] args) {
         ScheduleManagerImp scheduleManagerImp = new ScheduleManagerImp();
-        //scheduleManagerImp.loadScheduleFromJSONFile();
-        scheduleManagerImp.loadScheduleFromCSVFile();
-        scheduleManagerImp.saveToPDF("src/main/resources/izlaz.pdf");
+        scheduleManagerImp.loadScheduleFromFile();
+        scheduleManagerImp.saveSchedule();
         /*for(var x : scheduleManagerImp.getSchedule().getSchedule().entrySet()){
             System.out.println(x.getKey());
             for(var y : x.getValue()){
                 System.out.println(y);
             }
         }*/
-        //scheduleManagerImp.addEvent("Soba123,2023-10-10,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5");
-        for(var x : scheduleManagerImp.getSchedule().getSchedule())
+
+        /*for(var x : ScheduleManager.getSchedule().getSchedule())
         {
             System.out.println(x);
         }
+        scheduleManagerImp.addEvent("Soba123,2023-10-10,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5");
         System.out.println("Nakon dodavanja\n\n\n\n\n\n\n");
 
-        /*scheduleManagerImp.removeEvent("Soba123,2023-10-10,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5");
-        for(var x : scheduleManagerImp.getSchedule().getSchedule().entrySet()){
-            for(var y : x.getValue()){
-                System.out.println(y);
-            }
+        for(var x : ScheduleManager.getSchedule().getSchedule())
+        {
+            System.out.println(x);
+        }
+
+        scheduleManagerImp.removeEvent("Soba123,2023-10-10,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5");
+        System.out.println("Nakon brisanja\n\n\n\n\n\n\n");
+        for(var x : ScheduleManager.getSchedule().getSchedule())
+        {
+            System.out.println(x);
         }*/
     }
 }

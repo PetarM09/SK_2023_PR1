@@ -18,7 +18,7 @@ import java.util.*;
 
 public class ScheduleManagerImp extends ScheduleManager {
     @Override
-    public void loadScheduleFromJSONFile() {
+    protected void loadScheduleFromJSONFile() {
         schedule = initializeSchedule();
         Scanner scanner = new Scanner(System.in);
         getDatesAndExceptedDays();
@@ -60,7 +60,7 @@ public class ScheduleManagerImp extends ScheduleManager {
         }
     }
     @Override
-    public void loadScheduleFromCSVFile(){
+    protected void loadScheduleFromCSVFile(){
         schedule = initializeSchedule();
         Scanner scanner = new Scanner(System.in);
         //getDatesAndExceptedDays();
@@ -113,26 +113,5 @@ public class ScheduleManagerImp extends ScheduleManager {
         } catch (IOException | CsvException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public boolean isRoomOccupied(Room room, Date date, Time startTime, Time endTime) {
-        return false;
-    }
-
-    @Override
-    public boolean isEventOccupied(Event event) {
-        return false;
-    }
-
-
-    @Override
-    public boolean saveScheduleToFile(String filePath) {
-        return false;
-    }
-
-    @Override
-    public boolean saveScheduleToCSV(String filePath) {
-        return false;
     }
 }

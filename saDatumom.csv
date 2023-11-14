@@ -1,0 +1,404 @@
+Datum;Učionica;Dan;Termin;Predmet;Tip;Nastavnik;Grupe
+2023-08-05;Raf04 (u);TUESDAY;11:15:00-13;Poslovne aplikacije;V;Mijatovic Igor;101
+2023-09-13;Rg07 (u);MONDAY;13:15-15;Uvod u programiranje;D;Brnabic Mateja;101
+2023-12-17;Raf02 (u);TUESDAY;13:15-15;Uvod u programiranje;V;Tomic Milan;101
+2023-06-29;Raf21 (a);TUESDAY;17:15-20;Diskretne strukture;V;Jeremic Adrijana;101, 102, 103
+2023-08-09;Raf06 (a);    WEDNESDAY;16:15-18;Diskretne strukture;P;Jovanovic Irena;101, 102, 103
+2023-08-13;Raf21 (a);TUESDAY;15:15-17;Engleski 1;P;Cuk Bojana;101, 102, 103
+2023-11-14;Raf20 (a);WEDNESDAY;18:15-21;Linearna algebra i analiticka geometrija;P;Jovanovic Jelena;101, 102, 103
+2023-05-31;Raf20 (a);THURSDAY;18:15-21;Linearna algebra i analiticka geometrija;V;Jovanovic Jelena;101, 102, 103
+2023-01-08;Kolarac2;MONDAY;11:15-13;Uvod u programiranje;P;Urosevic Dragan;101, 102, 103
+2023-08-27;Raf04 (u);MONDAY;13:15-15;Poslovne aplikacije;V;Mijatovic Igor;102
+2023-10-02;Rg07 (u);MONDAY;15:15-17;Uvod u programiranje;D;Brnabic Mateja;102
+2023-05-10;Raf04 (u);THURSDAY;15:15-17;Uvod u programiranje;V;Tomic Milan;102
+2023-11-16;Raf04 (u);THURSDAY;13:15-15;Poslovne aplikacije;V;Mijatovic Igor;103
+2023-04-25;Raf07 (u);THURSDAY;15:15-17;Uvod u programiranje;D;Matovic Vanja;103
+2023-06-29;Raf07 (u);MONDAY;14:15-16;Uvod u programiranje;V;Tomic Milan;103
+2023-02-21;Raf04 (u);MONDAY;15:15-17;Poslovne aplikacije;V;Mijatovic Igor;104
+2023-07-04;Raf05 (u);WEDNESDAY;10:15-12;Uvod u programiranje;D;Matovic Vanja;104
+2023-11-20;Raf05 (u);WEDNESDAY;12:15-14;Uvod u programiranje;V;Jovanovic Mladen;104
+2023-10-13;Kolarac3;WEDNESDAY;16:15-19;Linearna algebra i analiticka geometrija;P;Gardasevic Filipovic Milanka;104, 105
+2023-11-14;Raf20 (a);TUESDAY;15:15-17;Diskretne strukture;P;Jovanovic Irena;104, 105, 106
+2023-09-10;Raf20 (a);FRIDAY;18:15-21;Diskretne strukture;V;Jeremic Adrijana;104, 105, 106
+2023-06-23;Raf21 (a);THURSDAY;13:15-15;Uvod u programiranje;P;Mladenovic Marko;104, 105, 106
+2023-06-14;Kolarac3;TUESDAY;17:15-20;Linearna algebra i analiticka geometrija;V;Jerotijevic Marija;104, 107, 112
+2023-05-03;Raf11 (a);MONDAY;17:15-19;Engleski 1;P;Cuk Bojana;104, 112
+2023-01-02;Raf04 (u);THURSDAY;11:15-13;Poslovne aplikacije;V;Mijatovic Igor;105
+2023-03-20;Raf02 (u);TUESDAY;18:15-20;Uvod u programiranje;D;Stojanovic Mihajlo;105
+2023-12-19;Rg07 (u);TUESDAY;13:15-15;Uvod u programiranje;V;Jovanovic Mladen;105
+2023-06-13;Raf20 (a);FRIDAY;15:15-18;Linearna algebra i analiticka geometrija;V;Jerotijevic Marija;105, 106
+2023-01-22;Raf04 (u);WEDNESDAY;13:15-15;Poslovne aplikacije;V;Mijatovic Igor;106
+2023-05-15;Rg02 (u);THURSDAY;15:15-17;Uvod u programiranje;D;Stojanovic Mihajlo;106
+2023-04-19;Raf07 (u);WEDNESDAY;10:15-12;Uvod u programiranje;V;Jovanovic Mladen;106
+2023-03-16;Kolarac3;TUESDAY;13:15-15;Engleski 1;P;Cuk Bojana;106, 107
+2023-04-20;Raf20 (a);MONDAY;17:15-20;Linearna algebra i analiticka geometrija;P;Gardasevic Filipovic Milanka;106, 108
+2023-01-30;Raf04 (u);MONDAY;11:15-13;Poslovne aplikacije;V;Mijatovic Igor;107
+2023-10-02;Raf04 (u);FRIDAY;18:15-20;Uvod u programiranje;D;Dejanovic Lazar;107
+2023-06-21;Raf05 (u);MONDAY;09:15-11;Uvod u programiranje;V;Najdic Jefimija;107
+2023-02-28;Raf21 (a);WEDNESDAY;13:15-15;Diskretne strukture;P;Jovanovic Irena;107, 108, 109
+2023-02-17;Raf21 (a);FRIDAY;15:15-18;Diskretne strukture;V;Jeremic Adrijana;107, 108, 109
+2023-11-17;Raf20 (a);THURSDAY;16:15-18;Uvod u programiranje;P;Mladenovic Marko;107, 108, 109
+2023-03-14;Raf20 (a);THURSDAY;13:15-16;Linearna algebra i analiticka geometrija;P;Gardasevic Filipovic Milanka;107, 109, 110
+2023-03-20;Raf04 (u);TUESDAY;13:15-15;Poslovne aplikacije;V;Mijatovic Igor;108
+2023-11-21;Raf07 (u);THURSDAY;18:15-20;Uvod u programiranje;D;Dejanovic Lazar;108
+2023-10-27;Rg07 (u);TUESDAY;11:15-13;Uvod u programiranje;V;Najdic Jefimija;108
+2023-11-01;Raf21 (a);FRIDAY;10:15-12;Engleski 1;P;Cuk Bojana;108, 109
+2023-12-01;Raf21 (a);FRIDAY;12:15-15;Linearna algebra i analiticka geometrija;V;Jerotijevic Marija;108, 109
+2023-05-31;Raf04 (u);WEDNESDAY;11:15-13;Poslovne aplikacije;V;Mijatovic Igor;109
+2023-09-28;Raf03 (u);TUESDAY;17:15-19;Uvod u programiranje;D;Arsenovic Arsen;109
+2023-01-02;Raf03 (u);TUESDAY;19:15-21;Uvod u programiranje;V;Redzic Nikola Jovan;109
+2023-07-30;Raf04 (u);TUESDAY;15:15-17;Poslovne aplikacije;V;Mijatovic Igor;110
+2023-04-03;Raf03 (u);MONDAY;19:15-21;Uvod u programiranje;D;Radenkovic Zarko;110
+2023-07-22;Rg07 (u);WEDNESDAY;13:15-15;Uvod u programiranje;V;Redzic Nikola Jovan;110
+2023-11-10;Raf06 (a);TUESDAY;17:15-19;Engleski 1;P;Cuk Bojana;110, 111
+2023-01-13;Raf21 (a);TUESDAY;13:15-15;Diskretne strukture;P;Jovanovic Irena;110, 111, 112, 113
+2023-06-28;Kolarac3;MONDAY;12:15-15;Diskretne strukture;V;Jeremic Adrijana;110, 111, 112, 113
+2023-08-28;Raf21 (a);WEDNESDAY;19:15-21;Uvod u programiranje;P;Mladenovic Marko;110, 111, 112, 113
+2023-08-04;Raf21 (a);MONDAY;15:15-18;Linearna algebra i analiticka geometrija;V;Jerotijevic Marija;110, 111, 113
+2023-04-29;Raf04 (u);MONDAY;09:15-11;Poslovne aplikacije;V;Mijatovic Igor;111
+2023-01-24;Raf01 (u);THURSDAY;17:15-19;Uvod u programiranje;D;Radenkovic Zarko;111
+2023-06-06;Rg07 (u);THURSDAY;13:15-15;Uvod u programiranje;V;Najdic Jefimija;111
+2023-12-09;Kolarac3;FRIDAY;14:15-17;Linearna algebra i analiticka geometrija;P;Gardasevic Filipovic Milanka;111, 112, 113
+2023-03-16;Raf04 (u);WEDNESDAY;15:15-17;Poslovne aplikacije;V;Mijatovic Igor;112
+2023-12-21;Raf03 (u);TUESDAY;15:15-17;Uvod u programiranje;D;Arsenovic Arsen;112
+2023-07-07;Raf07 (u);THURSDAY;11:15-13;Uvod u programiranje;V;Redzic Nikola Jovan;112
+2023-10-29;Raf04 (u);TUESDAY;09:15-11;Poslovne aplikacije;V;Mijatovic Igor;113
+2023-07-18;Rg07 (u);FRIDAY;12:15-14;Uvod u programiranje;D;Radenkovic Zarko;113
+2023-02-06;Raf03 (u);WEDNESDAY;17:15-19;Uvod u programiranje;V;Najdic Jefimija;113
+2023-07-24;Raf21 (a);MONDAY;19:15-21;Engleski 1;P;Cuk Bojana;113, 105
+2023-03-07;Raf12 (MD);THURSDAY;15:15-18;Crtanje i slikanje;P;Malesevic Nenad;1d1
+2023-04-01;Raf12 (MD);WEDNESDAY;14:15-17;Crtanje i slikanje;V;Stojanovic Visnja;1d1
+2023-06-08;Raf14 (MD);MONDAY;14:15-17;Osnovi oblikovanja;V;Jeremic Lana;1d1, 1d2
+2023-02-14;Raf14 (MD);FRIDAY;09:15-12;Osnovi projektovanja;V;Stojanovic Visnja;1d1, 1d2
+2023-07-30;Kolarac3;FRIDAY;12:15-14;Engleski 1;P;Cuk Bojana;1d1, 1d2, 1d3, 1d4
+2023-09-29;Raf20 (a);WEDNESDAY;09:15-11;Uvod u muzicku produkciju;PiV;Medic Ivana;1d1, 1d2, 1d3, 1d4
+2023-10-05;Raf15 (MD);TUESDAY;15:15-18;Osnovi oblikovanja;P;Malesevic Nenad;1d1, 1d3
+2023-09-03;Raf15 (MD);MONDAY;11:15-14;Osnovi projektovanja;P;Telarovic Rosana;1d1, 1d3
+2023-12-06;Raf12 (MD);MONDAY;09:15-12;Crtanje i slikanje;P;Malesevic Nenad;1d2
+2023-09-28;Raf12 (MD);WEDNESDAY;11:15-14;Crtanje i slikanje;V;Stojanovic Visnja;1d2
+2023-09-05;Raf15 (MD);THURSDAY;12:15-15;Osnovi oblikovanja;P;Malesevic Nenad;1d2, 1d4
+2023-08-07;Raf15 (MD);TUESDAY;09:15-12;Osnovi projektovanja;P;Telarovic Rosana;1d2, 1d4
+2023-05-14;Raf12 (MD);THURSDAY;09:15-12;Crtanje i slikanje;P;Malesevic Nenad;1d3, 1d4
+2023-01-07;Raf12 (MD);TUESDAY;12:15-15;Crtanje i slikanje;V;Stojanovic Visnja;1d3, 1d4
+2023-01-05;Raf16 (MD);MONDAY;17:15-20;Osnovi oblikovanja;V;Jeremic Lana;1d3, 1d4
+2023-07-11;Raf16 (MD);MONDAY;14:15-17;Osnovi projektovanja;V;Stojanovic Visnja;1d4, 1d3
+2023-08-08;Raf03 (u);FRIDAY;09:15-12;Administracija i odrzavanje sistema 1;PiV;Lale Sinisa;1s1
+2023-11-14;Raf03 (u);FRIDAY;12:15-15;Administracija i odrzavanje sistema 1;PiV;Lale Sinisa;1s1
+2023-03-05;Raf01 (u);WEDNESDAY;19:15-21;Organizacija racunara;V;Vasiljkovic Sanja;1s1
+2023-11-11;Raf01 (u);MONDAY;09:15-12;Osnovi programiranja;V;Zgonjanin Nikola;1s1
+2023-07-07;Raf05 (u);THURSDAY;13:15-15;Praktikum iz arhitekture racunara i operativnih sistema;V;Radulovic Natasa;1s1
+2023-07-11;Raf11 (a);TUESDAY;17:15-19;Engleski 1;P;Vrbica-Matejic Vera;1s1, 1s2
+2023-06-12;Raf11 (a);WEDNESDAY;14:15-17;Organizacija racunara;P;Mirkovic Bogdan;1s1, 1s2
+2023-10-30;Raf11 (a);WEDNESDAY;17:15-19;Osnovi programiranja;P;Mirkovic Bogdan;1s1, 1s2
+2023-04-14;Raf03 (u);THURSDAY;09:15-12;Administracija i odrzavanje sistema 1;PiV;Lale Sinisa;1s2
+2023-01-30;Raf03 (u);THURSDAY;12:15-15;Administracija i odrzavanje sistema 1;PiV;Lale Sinisa;1s2
+2023-03-25;Raf04 (u);TUESDAY;19:15-21;Organizacija racunara;V;Vasiljkovic Sanja;1s2
+2023-03-09;Raf02 (u);FRIDAY;11:15-14;Osnovi programiranja;V;Zgonjanin Nikola;1s2
+2023-02-03;Raf01 (u);FRIDAY;09:15-11;Praktikum iz arhitekture racunara i operativnih sistema;V;Radulovic Natasa;1s2
+2023-11-01;Raf02 (u);MONDAY;12:15-15;Administracija i odrzavanje sistema 1;PiV;Kostadinovic Miodrag;1s3
+2023-08-07;Raf02 (u);TUESDAY;10:15-13;Administracija i odrzavanje sistema 1;PiV;Kostadinovic Miodrag;1s3
+2023-03-15;Raf03 (u);WEDNESDAY;13:15-15;Organizacija racunara;V;Radulovic Natasa;1s3
+2023-05-16;Rg06 (u);THURSDAY;16:15-19;Osnovi programiranja;V;Sijacic Dusan;1s3
+2023-10-18;Raf02 (u);WEDNESDAY;16:15-18;Praktikum iz arhitekture racunara i operativnih sistema;V;Radulovic Natasa;1s3
+2023-07-10;Raf20 (a);MONDAY;09:15-11;Engleski 1;P;Vrbica-Matejic Vera;1s3, 1s4
+2023-09-21;Raf10 (a);TUESDAY;13:15-16;Organizacija racunara;P;Mirkovic Bogdan;1s3, 1s4
+2023-08-24;Raf10 (a);TUESDAY;16:15-18;Osnovi programiranja;P;Mirkovic Bogdan;1s3, 1s4
+2023-01-24;Raf02 (u);THURSDAY;13:15-16;Administracija i odrzavanje sistema 1;PiV;Kostadinovic Miodrag;1s4
+2023-02-02;Raf02 (u);WEDNESDAY;11:15-14;Administracija i odrzavanje sistema 1;PiV;Kostadinovic Miodrag;1s4
+2023-06-13;Rg01 (u);THURSDAY;16:15-18;Organizacija racunara;V;Radulovic Natasa;1s4
+2023-10-05;Rg06 (u);MONDAY;13:15-16;Osnovi programiranja;V;Sijacic Dusan;1s4
+2023-06-01;Rg01 (u);THURSDAY;18:15-20;Praktikum iz arhitekture racunara i operativnih sistema;V;Radulovic Natasa;1s4
+2023-11-04;Raf04 (u);TUESDAY;17:15-19;Algoritmi i strukture podataka;V;Jevtic Ivan;201
+2023-08-24;Raf01 (u);TUESDAY;14:15-17;Dizajn softvera;V;Andzic Dimitrije;201
+2023-12-28;Raf07 (u);TUESDAY;11:15-14;Inteligentni sistemi;V;Ciganovic Igor;201
+2023-05-06;Kolarac3;THURSDAY;11:15-14;Algoritmi i strukture podataka;P;Urosevic Dragan;201, 202, 203
+2023-12-27;Kolarac3;THURSDAY;09:15-11;Dizajn softvera;P;Rakocevic Goran;201, 202, 203
+2023-12-18;Kolarac3;MONDAY;15:15-18;Inteligentni sistemi;P;Vasiljevic Jelena;201, 202, 203
+2023-10-03;Raf21 (a);WEDNESDAY;11:15-13;Napredna matematicka analiza;P;Gardasevic Filipovic Milanka;201, 202, 203, 204, 205
+2023-06-18;Kolarac2;WEDNESDAY;13:15-15;Napredna matematicka analiza;V;Gardasevic Filipovic Milanka;201, 202, 203, 204, 205
+2023-06-19;Raf04 (u);WEDNESDAY;17:15-19;Algoritmi i strukture podataka;V;Trajkovic Mihailo;202
+2023-02-06;Raf02 (u);FRIDAY;18:15-21;Dizajn softvera;V;Andzic Dimitrije;202
+2023-09-21;Raf07 (u);FRIDAY;14:15-17;Inteligentni sistemi;V;Ciganovic Igor;202
+2023-04-26;Rg04 (u);TUESDAY;17:15-19;Algoritmi i strukture podataka;V;Trajkovic Mihailo;203
+2023-02-19;Raf04 (u);FRIDAY;15:15-18;Dizajn softvera;V;Andzic Dimitrije;203
+2023-10-10;Raf01 (u);FRIDAY;11:15-14;Inteligentni sistemi;V;Ciganovic Igor;203
+2023-06-12;Raf02 (u);WEDNESDAY;18:15-20;Algoritmi i strukture podataka;V;Jevtic Ivan;204
+2023-09-21;Raf03 (u);TUESDAY;09:15-12;Dizajn softvera;V;Jovanoski Mihail;204
+2023-06-25;Raf04 (u);THURSDAY;17:15-20;Inteligentni sistemi;V;Tomic Milan;204
+2023-04-21;Raf20 (a);WEDNESDAY;15:15-18;Algoritmi i strukture podataka;P;Urosevic Dragan;204, 205, 206
+2023-10-24;Kolarac1;THURSDAY;14:15-16;Dizajn softvera;P;Rakocevic Goran;204, 205, 206
+2023-10-27;Kolarac1;THURSDAY;11:15-14;Inteligentni sistemi;P;Vasiljevic Jelena;204, 205, 206
+2023-10-14;Rg07 (u);FRIDAY;10:15-12;Algoritmi i strukture podataka;V;Prokic Aleksa;205
+2023-06-26;Rg02 (u);WEDNESDAY;18:15-21;Dizajn softvera;V;Jovanoski Mihail;205
+2023-08-31;Rg07 (u);FRIDAY;14:15-17;Inteligentni sistemi;V;Tomic Milan;205
+2023-03-20;Raf01 (u);WEDNESDAY;13:15-15;Algoritmi i strukture podataka;V;Prokic Aleksa;206
+2023-08-25;Raf04 (u);FRIDAY;09:15-12;Dizajn softvera;V;Jovanoski Mihail;206
+2023-06-17;Raf07 (u);MONDAY;11:15-14;Inteligentni sistemi;V;Tomic Milan;206
+2023-04-11;Kolarac3;TUESDAY;09:15-11;Napredna matematicka analiza;P;Gardasevic Filipovic Milanka;206, 223
+2023-05-07;Kolarac3;TUESDAY;11:15-13;Napredna matematicka analiza;V;Gardasevic Filipovic Milanka;206, 223
+2023-02-10;Rg02 (u);TUESDAY;19:15-21;Algoritmi i strukture podataka;V;Jevtic Ivan;221
+2023-05-16;Rg01 (u);MONDAY;17:15-20;Signali i sistemi;V;Sandic-Stankovic Dragana;221
+2023-07-14;Kolarac2;MONDAY;15:15-17;Napredna matematicka analiza;P;Gardasevic Filipovic Milanka;221, 222
+2023-07-04;Kolarac1;THURSDAY;09:15-11;Napredna matematicka analiza;V;Gardasevic Filipovic Milanka;221, 222
+2023-10-25;Raf11 (a);THURSDAY;14:15-17;Osnovi elektronike;V;Markovic FRIDAYar;221, 222
+2023-07-18;Raf21 (a);WEDNESDAY;16:15-19;Algoritmi i strukture podataka;P;Mladenovic Marko;221, 222, 223
+2023-03-31;Raf21 (a);MONDAY;13:15-15;Osnovi elektronike;P;Karbunar Lazar;221, 222, 223
+2023-03-28;Kolarac3;WEDNESDAY;13:15-16;Signali i sistemi;P;Babic Djorde;221, 222, 223
+2023-03-09;Raf05 (u);MONDAY;19:15-21;Algoritmi i strukture podataka;V;Trajkovic Mihailo;222
+2023-03-04;Raf02 (u);THURSDAY;17:15-20;Signali i sistemi;V;Sandic-Stankovic Dragana;222
+2023-10-12;Rg02 (u);TUESDAY;17:15-19;Algoritmi i strukture podataka;V;Prokic Aleksa;223
+2023-04-27;Raf06 (a);TUESDAY;14:15-17;Osnovi elektronike;V;Markovic FRIDAYar;223
+2023-03-23;Raf04 (u);MONDAY;17:15-20;Signali i sistemi;V;Radulovic Natasa;223
+2023-07-28;Raf13 (MD);FRIDAY;11:15-13;Fotografija;V;Topuzovic Filip;2d1
+2023-01-08;Raf13 (MD);TUESDAY;09:15-12;Fotografija;P;Malesevic Nenad;2d1, 2d2, 2d3
+2023-01-15;Raf14 (MD);TUESDAY;12:15-14;Pismo i tipografija;P;Stojanovic Danica;2d1, 2d2, 2d3, 2d4
+2023-07-14;Raf14 (MD);WEDNESDAY;12:15-15;Pismo i tipografija;V;Stojanovic Danica;2d1, 2d2, 2d3, 2d4
+2023-06-30;Raf14 (MD);MONDAY;09:15-12;Modelovanje;P;Kukic  Rastko;2d1, 2d2, 2d3, 2d4
+2023-04-26;Raf14 (MD);WEDNESDAY;09:15-11;Modelovanje;V;Jonic Teodora;2d1, 2d2, 2d3, 2d4
+2023-08-01;Raf10 (a);THURSDAY;14:15-16;Istorija umetnosti;PiV;Stankovic Maja;2d1, 2d2, 2d3, 2d4, 2d5, 2d6
+2023-02-20;Raf10 (a);THURSDAY;16:15-18;Istorija umetnosti;PiV;Stankovic Maja;2d1, 2d2, 2d3, 2d4, 2d5, 2d6
+2023-12-04;Raf13 (MD);FRIDAY;15:15-17;Fotografija;V;Jeremic Lana;2d2
+2023-02-22;Raf13 (MD);WEDNESDAY;15:15-17;Fotografija;V;Jeremic Lana;2d3
+2023-11-16;Raf13 (MD);FRIDAY;09:15-11;Fotografija;V;Topuzovic Filip;2d4
+2023-12-09;Raf13 (MD);MONDAY;12:15-15;Fotografija;P;Malesevic Nenad;2d4, 2d5, 2d6
+2023-04-29;Raf13 (MD);WEDNESDAY;09:15-11;Fotografija;V;Topuzovic Filip;2d5
+2023-03-18;Raf16 (MD);FRIDAY;16:15-18;Pismo i tipografija;P;Stojanovic Danica;2d5, 2d6
+2023-07-12;Raf16 (MD);WEDNESDAY;15:15-18;Pismo i tipografija;V;Stojanovic Danica;2d5, 2d6
+2023-03-30;Raf16 (MD);WEDNESDAY;11:15-14;Modelovanje;P;Kukic  Rastko;2d5, 2d6
+2023-04-09;Raf16 (MD);THURSDAY;19:15-21;Modelovanje;V;Jonic Teodora;2d5, 2d6
+2023-12-07;Raf13 (MD);FRIDAY;13:15-15;Fotografija;V;Jeremic Lana;2d6
+2023-02-18;Raf07 (u);FRIDAY;11:15-14;Dizajn i razvoj veb strana;V;Sijacic Dusan;2s1
+2023-02-26;Raf01 (u);MONDAY;15:15-18;Informacioni sistemi;V;Prvulovic FRIDAYar;2s1
+2023-01-25;Raf03 (u);WEDNESDAY;10:15-13;Veb sistemi i tehnologije;P;Radosavljevic Nemanja;2s1
+2023-12-30;Raf07 (u);FRIDAY;09:15-11;Veb sistemi i tehnologije;V;Sijacic Dusan;2s1
+2023-10-14;Raf20 (a);WEDNESDAY;13:15-15;Dizajn i razvoj veb strana;P;Popovic Snezana;2s1, 2s2, 2s3a, 2s3b
+2023-01-29;Raf20 (a);TUESDAY;18:15-21;Informacioni sistemi;P;Mirkovic Bogdan;2s1, 2s2, 2s3a, 2s3b
+2023-11-18;Raf10 (a);FRIDAY;14:15-16;Engleski 3;PiV;Vrbica-Matejic Vera;2s1, 2s3a
+2023-07-01;Raf20 (a);MONDAY;11:15-13;Engleski 3;PiV;Vrbica-Matejic Vera;2s1, 2s3a
+2023-12-28;Raf02 (u);TUESDAY;15:15-18;Dizajn i razvoj veb strana;V;Sijacic Dusan;2s2
+2023-07-03;Raf02 (u);MONDAY;09:15-12;Informacioni sistemi;V;Prvulovic FRIDAYar;2s2
+2023-02-11;Raf05 (u);THURSDAY;10:15-13;Veb sistemi i tehnologije;P;Radosavljevic Nemanja;2s2
+2023-06-26;Raf03 (u);WEDNESDAY;15:15-17;Veb sistemi i tehnologije;V;Sijacic Dusan;2s2
+2023-12-05;Raf20 (a);TUESDAY;13:15-15;Engleski 3;PiV;Vrbica-Matejic Vera;2s2, 2s3b
+2023-10-19;Raf20 (a);MONDAY;13:15-15;Engleski 3;PiV;Vrbica-Matejic Vera;2s2, 2s3b
+2023-01-02;Raf02 (u);MONDAY;18:15-21;Dizajn i razvoj veb strana;V;Lazarevic Vukadin;2s3a, 2s3b
+2023-12-23;Raf02 (u);MONDAY;15:15-18;Informacioni sistemi;V;Lazarevic Vukadin;2s3a, 2s3b
+2023-07-20;Rg07 (u);WEDNESDAY;15:15-18;Veb sistemi i tehnologije;P;Radosavljevic Nemanja;2s3a, 2s3b
+2023-06-17;Rg01 (u);WEDNESDAY;18:15-20;Veb sistemi i tehnologije;V;Lazarevic Vukadin;2s3a, 2s3b
+2023-08-23;Raf07 (u);TUESDAY;14:15-16;Skript jezici;V;Ciganovic Igor;301a
+2023-07-14;Raf20 (a);THURSDAY;11:15-13;Testiranje softvera;P;Dimic Surla Bojana;301a, 301b, 302a, 302b
+2023-10-09;Raf20 (a);FRIDAY;09:15-11;Verovatnoca i statistika;P;Maric Nevena;301a, 301b, 302a, 302b, 303, 304, 305
+2023-11-11;Kolarac2;WEDNESDAY;16:15-18;Softverske komMONDAYente;P;Dimic Surla Bojana;301a, 301b, 302a, 302b, 305, 306, 307a, 307b
+2023-10-12;Raf20 (a);TUESDAY;11:15-13;Programski prevodioci;P;Vujosevic Dusan;301a, 301b, 302a, 303, 302b
+2023-03-31;Raf20 (a);FRIDAY;11:15-13;Skript jezici;P;Radenkovic Milos;301a, 301b, 304, 305, 306, 307a, 307b, 322, 323
+2023-06-20;Raf07 (u);THURSDAY;09:15-11;Programski prevodioci;V;Stojanovic Mihajlo;301a, 302a
+2023-06-26;Raf07 (u);TUESDAY;09:15-11;Softverske komMONDAYente;V;Najdic Jefimija;301a, 302a
+2023-02-06;Raf04 (u);WEDNESDAY;09:15-11;Testiranje softvera;V;Ivkovic Sava;301a, 302a
+2023-05-15;Raf05 (u);WEDNESDAY;14:15-16;Verovatnoca i statistika;V;Maric Nevena;301a, 302a
+2023-09-19;Raf02 (u);WEDNESDAY;14:15-16;Skript jezici;V;Ciganovic Igor;301b
+2023-06-11;Raf01 (u);THURSDAY;13:15-15;Programski prevodioci;V;Stojanovic Mihajlo;301b, 302b
+2023-05-04;Raf05 (u);MONDAY;11:15-13;Softverske komMONDAYente;V;Najdic Jefimija;301b, 302b
+2023-12-02;Rg07 (u);TUESDAY;09:15-11;Testiranje softvera;V;Ivkovic Sava;301b, 302b
+2023-03-16;Raf05 (u);WEDNESDAY;18:15-20;Verovatnoca i statistika;V;Maric Nevena;301b, 302b
+2023-12-09;Raf09 (a);TUESDAY;14:15-16;Upravljanje informacijama;P;Radenkovic Milos;302a, 302b, 307a, 307b
+2023-11-15;Raf01 (u);WEDNESDAY;11:15-13;Upravljanje informacijama;V;Stojanovic Mihajlo;302a, 302b, 307a, 307b
+2023-05-08;Raf09 (a);THURSDAY;14:15-16;Geometrijski algoritmi;P;Urosevic Dragan;303
+2023-06-04;Raf09 (a);THURSDAY;16:15-18;Geometrijski algoritmi;V;Urosevic Dragan;303
+2023-08-06;Raf20 (a);FRIDAY;13:15-15;Paralelni algoritmi;P;Rakocevic Goran;303, 304, 305
+2023-02-12;Raf03 (u);THURSDAY;19:15-21;Paralelni algoritmi;V;Jeremic Adrijana;303, 304, 305
+2023-08-26;Rg07 (u);WEDNESDAY;11:15-13;Racunarska grafika;P;Masulovic Dragan;303, 306
+2023-05-17;Raf01 (u);WEDNESDAY;09:15-11;Racunarska grafika;V;Dotlic Emilija;303, 306
+2023-04-11;Raf05 (u);MONDAY;13:15-15;Skript jezici;V;Ciganovic Igor;304, 305
+2023-05-24;Raf21 (a);THURSDAY;17:15-19;Programski prevodioci;P;Vujosevic Dusan;304, 305, 306, 307a, 307b
+2023-04-28;Raf09 (a);TUESDAY;17:15-19;Sistemi u realnom vremenu;P;Jovanovic Milos;304, 323
+2023-09-30;Raf07 (u);MONDAY;16:15-18;Sistemi u realnom vremenu;V;Jovanovic Milos;304, 323
+2023-03-13;Raf03 (u);TUESDAY;12:15-14;Programski prevodioci;V;Stojanovic Mihajlo;305
+2023-07-04;Rg01 (u);TUESDAY;17:15-19;Verovatnoca i statistika;V;Maric Nevena;305, 303, 307a
+2023-05-03;Raf01 (u);THURSDAY;15:15-17;Softverske komMONDAYente;V;Redzic Nikola Jovan;305, 307a
+2023-11-04;Rg07 (u);TUESDAY;15:15-17;Programski prevodioci;V;Stojanovic Mihajlo;306, 303
+2023-07-19;Rg07 (u);THURSDAY;15:15-17;Verovatnoca i statistika;V;Maric Nevena;306, 304, 307b
+2023-11-04;Raf02 (u);THURSDAY;09:15-11;Skript jezici;V;Prvulovic FRIDAYar;306, 307a
+2023-04-01;Raf21 (a);THURSDAY;11:15-13;Verovatnoca i statistika;P;Maric Nevena;306, 307a, 307b, 321, 322, 323
+2023-05-18;Raf05 (u);TUESDAY;17:15-19;Softverske komMONDAYente;V;Redzic Nikola Jovan;306, 307b
+2023-08-19;Raf02 (u);WEDNESDAY;09:15-11;Programski prevodioci;V;Stojanovic Mihajlo;307a, 304, 307b
+2023-08-02;Raf07 (u);WEDNESDAY;13:15-15;Skript jezici;V;Prvulovic FRIDAYar;307b, 323
+2023-01-27;Raf05 (u);MONDAY;17:15-19;Povezivanje mreza;V;Milovic Njegovan;321
+2023-10-18;Raf09 (a);WEDNESDAY;14:15-16;Virtuelizovani mrezni sistemi;P;Bojovic FRIDAYar;321
+2023-04-08;Rg07 (u);THURSDAY;09:15-11;Virtuelizovani mrezni sistemi;V;Zivanovic Marko;321
+2023-07-21;Raf11 (a);MONDAY;15:15-17;Povezivanje mreza;P;Bojovic FRIDAYar;321, 322
+2023-03-18;CET;WEDNESDAY;11:15-13;Projektovanje racunarskih sistema;P;Radivojevic Mirjana;321, 322
+2023-11-09;Kolarac3;THURSDAY;14:15-16;Primenjena vestacka inteligencija;P;Vasiljevic Jelena;321, 322, 323
+2023-04-18;Raf05 (u);WEDNESDAY;16:15-18;Verovatnoca i statistika;V;Maric Nevena;321, 323
+2023-12-04;Raf05 (u);TUESDAY;15:15-17;Primenjena vestacka inteligencija;V;Tomic Milan;321, 323
+2023-05-11;Rg01 (u);WEDNESDAY;16:15-18;Skript jezici;V;Ciganovic Igor;322
+2023-03-16;Raf04 (u);THURSDAY;09:15-11;Verovatnoca i statistika;V;Maric Nevena;322
+2023-11-13;Raf01 (u);MONDAY;19:15-21;Povezivanje mreza;V;Milovic Njegovan;322
+2023-11-28;Rg07 (u);TUESDAY;17:15-19;Primenjena vestacka inteligencija;V;Tomic Milan;322
+2023-08-23;CET;WEDNESDAY;09:15-11;Projektovanje racunarskih sistema;V;Radivojevic Mirjana;322, 321
+2023-11-19;Raf10 (a);MONDAY;18:15-20;Sistemsko programiranje;P;Jovanovic Milos;323
+2023-10-28;Rg07 (u);WEDNESDAY;18:15-20;Sistemsko programiranje;V;Jovanovic Milos;323
+2023-08-17;Raf16 (MD);TUESDAY;09:15-12;Multimedijalni projekti 1;P;Kukic  Rastko;3d1a
+2023-09-07;Raf14 (MD);THURSDAY;16:15-19;Multimedijalni projekti 1;V;Jonic Teodora;3d1a
+2023-08-24;Raf13 (MD);THURSDAY;11:15-13;Osnovi animacije;P;Djuric Milan;3d1a
+2023-06-20;Raf15 (MD);WEDNESDAY;11:15-13;Dizajn i informacione tehnologije 1;P;Topuzovic Filip;3d1a, 3d1b
+2023-12-18;Raf14 (MD);THURSDAY;13:15-14;Dizajn i informacione tehnologije 1;V;Topuzovic Filip;3d1a, 3d1b
+2023-06-03;Raf14 (MD);FRIDAY;12:15-15;Graficki projekti;P;Stojanovic Danica;3d1a, 3d1b
+2023-07-12;Raf14 (MD);TUESDAY;15:15-18;Graficki projekti;V;Stojanovic Danica;3d1a, 3d1b
+2023-12-07;Raf14 (MD);THURSDAY;14:15-16;Osnovi animacije;V;Koturanovic Aleksandar;3d1a, 3d1b
+2023-01-05;Raf16 (MD);TUESDAY;12:15-15;Multimedijalni projekti 1;P;Kukic  Rastko;3d1b
+2023-02-15;Raf16 (MD);TUESDAY;18:15-21;Multimedijalni projekti 1;V;Jonic Teodora;3d1b
+2023-11-21;Raf13 (MD);FRIDAY;18:15-20;Osnovi animacije;P;Djuric Milan;3d1b
+2023-04-09;Raf03 (u);MONDAY;15:15-16;IT servis menadzment;V;Pilipovic Dragoljub;3s1
+2023-10-13;Raf06 (a);THURSDAY;14:15-16;Konfiguracija i odrzavanje IP mreza;P;Bojovic FRIDAYar;3s1
+2023-11-03;Raf07 (u);MONDAY;09:15-11;Konfiguracija i odrzavanje IP mreza;V;Pernar Veljko;3s1
+2023-02-18;Raf06 (a);THURSDAY;16:15-18;Uvod u administraciju IP mreza;P;Bojovic FRIDAYar;3s1
+2023-10-09;Raf01 (u);TUESDAY;12:15-14;Uvod u administraciju IP mreza;V;Zivanovic Marko;3s1
+2023-08-24;Raf01 (u);MONDAY;12:15-15;Uvod u softversko inzenjerstvo;V;Prvulovic FRIDAYar;3s1
+2023-12-18;Raf09 (a);MONDAY;16:15-18;IT servis menadzment;P;Pilipovic Dragoljub;3s1, 3s2
+2023-12-08;Raf11 (a);TUESDAY;15:15-17;Uvod u softversko inzenjerstvo;P;Mladenovic Marko;3s1, 3s2
+2023-03-08;Raf03 (u);MONDAY;14:15-15;IT servis menadzment;V;Pilipovic Dragoljub;3s2
+2023-02-07;Raf07 (u);WEDNESDAY;15:15-18;Uvod u softversko inzenjerstvo;V;Prvulovic FRIDAYar;3s2
+2023-12-23;Raf05 (u);TUESDAY;09:15-12;C# programiranje;PiV;Milosavljevic Milos;3s2
+2023-01-28;Raf05 (u);TUESDAY;12:15-15;C# programiranje;PiV;Milosavljevic Milos;3s2
+2023-06-11;Raf05 (u);THURSDAY;18:15-21;SQL programiranje;PiV;Popovic Snezana;3s2
+2023-01-24;Raf05 (u);THURSDAY;15:15-18;SQL programiranje;PiV;Popovic Snezana;3s2
+2023-07-27;Raf08 (a);WEDNESDAY;15:15-17;Skladista podataka;P;Popovic Snezana;401
+2023-06-04;Raf03 (u);MONDAY;09:15-11;Skladista podataka;V;Radenkovic Milos;401
+2023-08-19;Rg04 (u);THURSDAY;15:15-17;Veliki podaci;V;Najdic Jefimija;401
+2023-08-06;Kolarac3;WEDNESDAY;11:15-13;Kombinatorika i teorija grafova;P;Jovanovic Irena;401, 402a, 402b, 403, 404, 405, 406
+2023-08-13;Kolarac3;TUESDAY;15:15-17;Kombinatorika i teorija grafova;V;Jeremic Adrijana;401, 402a, 402b, 403, 404, 405, 406
+2023-12-02;Kolarac2;MONDAY;13:15-15;Napredno veb programiranje;P;Vidakovic Milan;401, 402a, 402b, 404, 405, 406, 422, 423
+2023-09-04;Raf08 (a);TUESDAY;13:15-15;Upravljanje projektima;P;Vujosevic Dusan;401, 402a, 402b, 405
+2023-12-29;Raf21 (a);MONDAY;11:15-13;Veliki podaci;P;Radenkovic Milos;401, 402a, 402b, 406, 423
+2023-07-26;Raf03 (u);THURSDAY;17:15-19;Upravljanje projektima;V;Jeremic Adrijana;401, 404
+2023-06-09;Raf07 (u);THURSDAY;13:15-15;Napredno veb programiranje;V;Redzic Nikola Jovan;401, 405
+2023-05-06;Kolarac2;WEDNESDAY;09:15-11;Multimedijalni informacioni sistemi;P;Vujosevic Dusan;402a, 402b, 404, 405
+2023-07-05;Raf14 (MD);THURSDAY;09:15-11;Multimedijalni informacioni sistemi;V;Topuzovic Filip;402a, 404
+2023-08-17;Raf03 (u);THURSDAY;15:15-17;Upravljanje projektima;V;Jeremic Adrijana;402a, 405
+2023-09-02;Raf02 (u);THURSDAY;11:15-13;Veliki podaci;V;Najdic Jefimija;402a, 406
+2023-02-22;Raf05 (u);FRIDAY;17:15-19;Napredno veb programiranje;V;Antic Stefan;402a, 406, 404
+2023-09-06;Raf14 (MD);THURSDAY;11:15-13;Multimedijalni informacioni sistemi;V;Topuzovic Filip;402b, 405
+2023-12-11;Raf03 (u);MONDAY;17:15-19;Upravljanje projektima;V;Jeremic Adrijana;402b, 406
+2023-03-31;Rg07 (u);FRIDAY;19:15-21;Napredno veb programiranje;V;Antic Stefan;402b, 422, 423
+2023-10-28;Raf02 (u);FRIDAY;16:15-18;Veliki podaci;V;Najdic Jefimija;402b, 423
+2023-12-10;Raf08 (a);FRIDAY;15:15-17;Kvantno racunarstvo;P;Radovanovic Aleksandar;403
+2023-11-30;Rg02 (u);THURSDAY;17:15-19;Kvantno racunarstvo;V;Matovic Vanja;403
+2023-12-24;Raf10 (a);FRIDAY;17:15-19;Prepoznavanje govora;P;Stanojevic Mladen;403
+2023-03-26;Rg07 (u);WEDNESDAY;09:15-11;Prepoznavanje govora;V;FRIDAYrovic Relja;403
+2023-08-25;Raf21 (a);THURSDAY;15:15-17;Upravljanje projektima;P;Vujosevic Dusan;403, 404, 421, 422, 423, 406
+2023-07-06;Raf21 (a);THURSDAY;09:15-11;Duboko ucenje;P;Ilic Nemanja;403, 405
+2023-11-26;Rg07 (u);MONDAY;09:15-11;Duboko ucenje;V;Bojic Milan;403, 405
+2023-09-18;Raf05 (u);FRIDAY;13:15-15;Upravljanje projektima;V;Jeremic Adrijana;403, 423
+2023-01-09;Raf04 (u);FRIDAY;12:15-14;Modelovanje i simulacija;P;Maric Nevena;404, 406
+2023-10-25;Raf01 (u);FRIDAY;14:15-16;Modelovanje i simulacija;V;Maric Nevena;404, 406
+2023-08-28;CET;FRIDAY;09:15-11;Racunarske mreze velikih sistema;P;Radivojevic Mirjana;421
+2023-09-24;CET;FRIDAY;11:15-13;Racunarske mreze velikih sistema;V;Radivojevic Mirjana;421
+2023-06-06;Raf09 (a);WEDNESDAY;16:15-18;Uvod u robotiku;P;Jovanovic Milos;421
+2023-11-10;Rg07 (u);THURSDAY;17:15-19;Uvod u robotiku;V;Jovanovic Milos;421
+2023-02-07;Raf05 (u);MONDAY;15:15-17;Upravljanje projektima;V;Jeremic Adrijana;421, 422
+2023-02-19;Raf10 (a);TUESDAY;18:15-20;Data centar infrastruktura;P;Martic Goran;421, 422
+2023-01-25;Raf07 (u);TUESDAY;16:15-18;Data centar infrastruktura;V;Preocanin Andjela;421, 422
+2023-02-15;Raf08 (a);WEDNESDAY;18:15-21;Bezicne i mobilne komunikacije;P;Vukotic Selena;421, 422, 423
+2023-09-04;Raf10 (a);WEDNESDAY;14:15-16;Mikroservisne aplikacije;P;Dimic Surla Bojana;422, 423
+2023-03-05;Raf01 (u);WEDNESDAY;16:15-18;Mikroservisne aplikacije;V;Redzic Nikola Jovan;422, 423
+2023-12-27;Raf06 (a);THURSDAY;19:15-21;Bezicne i mobilne komunikacije;V;Lukic Djordje;422, 423, 421
+2023-08-11;Raf16 (MD);THURSDAY;14:15-17;Animirana grafika;P;Djuric Milan;4d1
+2023-03-03;Raf16 (MD);FRIDAY;13:15-16;Animirana grafika;V;Koturanovic Aleksandar;4d1
+2023-10-14;Raf16 (MD);MONDAY;11:15-14;Digitalna slika;P;Spasic Nikola;4d1
+2023-04-17;Raf16 (MD);WEDNESDAY;18:15-21;Digitalna slika;V;Stetin Darko;4d1
+2023-08-06;Raf16 (MD);FRIDAY;10:15-12;Uvod u 3D animaciju;P;Rubil Goran;4d1
+2023-09-10;Raf16 (MD);MONDAY;09:15-11;Uvod u 3D animaciju;V;Rubil Goran;4d1
+2023-11-18;Raf15 (MD);THURSDAY;18:15-21;Poetika digitalne umetnosti;P;Stankovic Maja;4d1, 4d3
+2023-02-25;Raf15 (MD);WEDNESDAY;15:15-18;Poetika digitalne umetnosti;V;Malesevic Novak;4d1, 4d3
+2023-05-25;Raf13 (MD);THURSDAY;14:15-17;Poetika fotografske umetnosti;V;Jeremic Lana;4d2
+2023-03-03;Raf14 (MD);MONDAY;17:15-20;Postprodukcija;P;Spasic Nikola;4d2
+2023-05-30;Raf14 (MD);WEDNESDAY;15:15-18;Postprodukcija;V;Stetin Darko;4d2
+2023-09-04;Raf14 (MD);FRIDAY;15:15-18;Animirana grafika;P;Djuric Milan;4d2, 4d3
+2023-08-02;Raf14 (MD);FRIDAY;18:15-21;Animirana grafika;V;Koturanovic Aleksandar;4d2, 4d3
+2023-08-01;Raf14 (MD);WEDNESDAY;18:15-20;Uvod u 3D animaciju;P;Rubil Goran;4d2, 4d3
+2023-05-08;Raf14 (MD);TUESDAY;09:15-11;Uvod u 3D animaciju;V;Rubil Goran;4d2, 4d3
+2023-04-21;Raf13 (MD);TUESDAY;12:15-15;Poetika fotografske umetnosti;P;Malesevic Nenad;4d2, 4d3
+2023-07-28;Raf13 (MD);WEDNESDAY;12:15-15;Poetika fotografske umetnosti;V;Jeremic Lana;4d3
+2023-07-27;Raf07 (u);MONDAY;18:15-21;MFC;P;ZZ RG;MFC
+2023-12-28;Raf07 (u);TUESDAY;18:15-21;MFC;P;ZZ RG;MFC
+2023-02-27;Raf07 (u);WEDNESDAY;18:15-21;MFC;P;ZZ RG;MFC
+2023-12-17;Raf07 (u);FRIDAY;18:15-21;MFC;P;ZZ RG;MFC
+2023-08-14;Raf08 (a);TUESDAY;17:15-19;Kombinatorika i teorija grafova;P;Mladenovic Marko;MONDAYovci
+2023-09-29;Raf10 (a);THURSDAY;18:15-20;Kombinatorika i teorija grafova;V;Mladenovic Marko;MONDAYovci
+2023-10-27;Rg01 (u);MONDAY;09:15-16;ZZ RG 01;P;ZZ RG;RG
+2023-05-26;Rg01 (u);TUESDAY;09:15-16;ZZ RG 01;P;ZZ RG;RG
+2023-12-15;Rg01 (u);WEDNESDAY;09:15-16;ZZ RG 01;P;ZZ RG;RG
+2023-12-08;Rg01 (u);THURSDAY;09:15-16;ZZ RG 01;P;ZZ RG;RG
+2023-08-23;Rg01 (u);FRIDAY;09:15-16;ZZ RG 01;P;ZZ RG;RG
+2023-11-17;Rg02 (u);MONDAY;09:15-16;ZZ RG02;P;ZZ RG;RG
+2023-06-11;Rg02 (u);TUESDAY;09:15-16;ZZ RG02;P;ZZ RG;RG
+2023-07-16;Rg02 (u);WEDNESDAY;09:15-16;ZZ RG02;P;ZZ RG;RG
+2023-03-28;Rg02 (u);THURSDAY;09:15-15;ZZ RG02;P;ZZ RG;RG
+2023-10-31;Rg02 (u);FRIDAY;09:15-16;ZZ RG02;P;ZZ RG;RG
+2023-04-19;Rg06 (u);MONDAY;09:15-13;ZZ RG 06;P;ZZ RG;RG
+2023-08-11;Rg06 (u);TUESDAY;09:15-16;ZZ RG 06;P;ZZ RG;RG
+2023-07-26;Rg06 (u);WEDNESDAY;09:15-16;ZZ RG 06;P;ZZ RG;RG
+2023-04-27;Rg06 (u);THURSDAY;09:15-16;ZZ RG 06;P;ZZ RG;RG
+2023-12-02;Rg06 (u);FRIDAY;09:15-16;ZZ RG 06;P;ZZ RG;RG
+2023-10-04;Raf06 (a);MONDAY;09:15-16;ZZ RAF 6;P;ZZ RG;RG
+2023-02-18;Raf06 (a);TUESDAY;09:15-14;ZZ RAF 6;P;ZZ RG;RG
+2023-04-19;Raf06 (a);WEDNESDAY;09:15-16;ZZ RAF 6;P;ZZ RG;RG
+2023-06-02;Raf06 (a);THURSDAY;09:15-14;ZZ RAF 6;P;ZZ RG;RG
+2023-08-09;Raf06 (a);FRIDAY;09:15-16;ZZ RAF 6;P;ZZ RG;RG
+2023-12-26;Kolarac1;MONDAY;09:15-19;ZZ K1;P;ZZ RG;RG
+2023-08-06;Kolarac1;MONDAY;19:15-21;ZZ K1;P;ZZ RG;RG
+2023-02-19;Kolarac1;TUESDAY;09:15-19;ZZ K1;P;ZZ RG;RG
+2023-03-26;Kolarac1;TUESDAY;19:15-21;ZZ K1;P;ZZ RG;RG
+2023-02-28;Kolarac1;WEDNESDAY;09:15-19;ZZ K1;P;ZZ RG;RG
+2023-10-02;Kolarac1;WEDNESDAY;19:15-21;ZZ K1;P;ZZ RG;RG
+2023-10-06;Kolarac1;THURSDAY;18:15-21;ZZ K1;P;ZZ RG;RG
+2023-10-23;Kolarac1;FRIDAY;09:15-19;ZZ K1;P;ZZ RG;RG
+2023-07-30;Kolarac1;FRIDAY;19:15-21;ZZ K1;P;ZZ RG;RG
+2023-11-13;Kolarac2;MONDAY;18:15-21;ZZ K2;P;ZZ RG;RG
+2023-03-09;Kolarac2;TUESDAY;09:15-19;ZZ K2;P;ZZ RG;RG
+2023-07-11;Kolarac2;TUESDAY;19:15-21;ZZ K2;P;ZZ RG;RG
+2023-10-21;Kolarac2;WEDNESDAY;18:15-21;ZZ K2;P;ZZ RG;RG
+2023-03-09;Kolarac2;THURSDAY;09:15-19;ZZ K2;P;ZZ RG;RG
+2023-03-05;Kolarac2;THURSDAY;19:15-21;ZZ K2;P;ZZ RG;RG
+2023-02-16;Kolarac2;FRIDAY;09:15-19;ZZ K2;P;ZZ RG;RG
+2023-09-12;Kolarac2;FRIDAY;19:15-21;ZZ K2;P;ZZ RG;RG
+2023-01-18;Kolarac3;MONDAY;19:15-21;ZZ K3;P;ZZ RG;RG
+2023-10-31;Kolarac3;TUESDAY;20:15-21;ZZ K3;P;ZZ RG;RG
+2023-07-18;Kolarac3;WEDNESDAY;19:15-21;ZZ K3;P;ZZ RG;RG
+2023-07-28;Kolarac3;THURSDAY;19:15-21;ZZ K3;P;ZZ RG;RG
+2023-01-12;Kolarac3;FRIDAY;19:15-21;ZZ K3;P;ZZ RG;RG
+2023-01-11;Raf11 (a);MONDAY;09:15-14;ZZ Raf 11;P;ZZ RG;RG
+2023-11-21;Raf11 (a);TUESDAY;09:15-14;ZZ Raf 11;P;ZZ RG;RG
+2023-12-21;Raf11 (a);WEDNESDAY;09:15-14;ZZ Raf 11;P;ZZ RG;RG
+2023-04-02;Raf11 (a);THURSDAY;09:15-14;ZZ Raf 11;P;ZZ RG;RG
+2023-06-18;Raf11 (a);FRIDAY;09:15-14;ZZ Raf 11;P;ZZ RG;RG
+2023-10-20;Raf10 (a);MONDAY;09:15-14;ZZ Raf 10;P;ZZ RG;RG
+2023-09-04;Raf10 (a);TUESDAY;09:15-13;ZZ Raf 10;P;ZZ RG;RG
+2023-01-12;Raf10 (a);WEDNESDAY;09:15-14;ZZ Raf 10;P;ZZ RG;RG
+2023-11-09;Raf10 (a);THURSDAY;09:15-14;ZZ Raf 10;P;ZZ RG;RG
+2023-05-05;Raf10 (a);FRIDAY;09:15-14;ZZ Raf 10;P;ZZ RG;RG
+2023-10-13;Raf08 (a);MONDAY;09:15-15;ZZ Raf 08;P;ZZ RG;RG
+2023-07-18;Raf08 (a);TUESDAY;09:15-13;ZZ Raf 08;P;ZZ RG;RG
+2023-04-19;Raf08 (a);WEDNESDAY;09:15-15;ZZ Raf 08;P;ZZ RG;RG
+2023-07-11;Raf08 (a);THURSDAY;09:15-15;ZZ Raf 08;P;ZZ RG;RG
+2023-11-07;Raf08 (a);FRIDAY;09:15-15;ZZ Raf 08;P;ZZ RG;RG
+2023-09-16;Raf19 (a);MONDAY;09:15-14;ZZ Raf 19;P;ZZ RG;RG
+2023-03-02;Raf19 (a);TUESDAY;09:15-14;ZZ Raf 19;P;ZZ RG;RG
+2023-11-10;Raf19 (a);WEDNESDAY;09:15-14;ZZ Raf 19;P;ZZ RG;RG
+2023-09-04;Raf19 (a);THURSDAY;09:15-14;ZZ Raf 19;P;ZZ RG;RG
+2023-08-20;Raf19 (a);FRIDAY;09:15-14;ZZ Raf 19;P;ZZ RG;RG
+2023-02-10;Rg04 (u);MONDAY;09:15-16;ZZ RG 4;P;ZZ RG;RG
+2023-05-27;Rg04 (u);TUESDAY;09:15-16;ZZ RG 4;P;ZZ RG;RG
+2023-12-23;Rg04 (u);WEDNESDAY;09:15-16;ZZ RG 4;P;ZZ RG;RG
+2023-05-12;Rg04 (u);THURSDAY;09:15-15;ZZ RG 4;P;ZZ RG;RG
+2023-11-22;Rg04 (u);FRIDAY;09:15-16;ZZ RG 4;P;ZZ RG;RG
+2023-11-18;Raf09 (a);MONDAY;09:15-16;ZZ Raf 9;P;ZZ RG;RG
+2023-02-12;Raf09 (a);TUESDAY;8:15-14;ZZ Raf 9;P;ZZ RG;RG
+2023-12-23;Raf09 (a);WEDNESDAY;09:15-14;ZZ Raf 9;P;ZZ RG;RG
+2023-08-05;Raf09 (a);THURSDAY;09:15-14;ZZ Raf 9;P;ZZ RG;RG
+2023-07-18;Raf09 (a);FRIDAY;09:15-16;ZZ Raf 9;P;ZZ RG;RG
+2023-05-26;Raf18 (a);MONDAY;09:15-14;ZZ Raf 18;P;ZZ RG;RG
+2023-03-31;Raf18 (a);TUESDAY;09:15-14;ZZ Raf 18;P;ZZ RG;RG
+2023-03-25;Raf18 (a);WEDNESDAY;09:15-14;ZZ Raf 18;P;ZZ RG;RG
+2023-12-15;Raf18 (a);THURSDAY;09:15-14;ZZ Raf 18;P;ZZ RG;RG
+2023-09-10;Raf18 (a);FRIDAY;09:15-14;ZZ Raf 18;P;ZZ RG;RG

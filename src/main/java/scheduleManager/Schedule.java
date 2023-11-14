@@ -23,17 +23,21 @@ public class Schedule {
     }
     
 
-    public void sortByDate(){
-        if(schedule.get(0).getDate() != null)
-            schedule.sort(Comparator.comparing(Event::getDate));
+    public List<Event> sortByDate(){
+        List<Event> events = new ArrayList<>(schedule);
+        if(events.get(0).getDate() != null)
+            events.sort(Comparator.comparing(Event::getDate));
+        return events;
     }
 
-    public void sortByDayOfWeekDay(){
+    public List<Event> sortByDayOfWeekDay(){
         ///Sortiranje prvo do dana u nedelji, pa po datumu ako datum nije null
-        if(schedule.get(0).getDate() == null)
-            schedule.sort(Comparator.comparing(Event::getDayOfWeek));
+        List<Event> events = new ArrayList<>(schedule);
+        if(events.get(0).getDate() == null)
+            events.sort(Comparator.comparing(Event::getDayOfWeek));
         else
-            schedule.sort(Comparator.comparing(Event::getDayOfWeek).thenComparing(Event::getDate));
+            events.sort(Comparator.comparing(Event::getDayOfWeek).thenComparing(Event::getDate));
+        return events;
     }
 
     public List<Event> scheduleFromDateToDate(Date pocetak, Date kraj) {
