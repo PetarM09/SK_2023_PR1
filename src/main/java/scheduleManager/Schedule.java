@@ -61,4 +61,19 @@ public class Schedule {
             events = schedule.stream().filter(e -> e.getAdditionalData().get(token[0]).equals(token[1])).collect(Collectors.toList());
         return events;
     }
+
+    public List<Event> getEventsByDay(DayOfWeek day){
+        List<Event> events = new ArrayList<>();
+
+        for (Event event : schedule){
+            if (event.getDayOfWeek() == day){
+                events.add(event);
+            }
+        }
+
+        if(events.get(0).getDate() != null)
+            events.sort(Comparator.comparing(Event::getDate));
+
+        return events;
+    }
 }

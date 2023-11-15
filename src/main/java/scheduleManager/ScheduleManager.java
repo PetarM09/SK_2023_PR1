@@ -15,6 +15,8 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.opencsv.CSVWriter;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.commons.lang3.tuple.Pair;
+import org.apache.commons.lang3.tuple.Triple;
 
 import java.io.*;
 import java.sql.Time;
@@ -456,5 +458,29 @@ public abstract class ScheduleManager {
         }
         return found;
     }*/
+
+    //Pretrazivanje slobodnih termina
+    public Map<DayOfWeek, List<Triple<Time, Time, String>>> findAvailableTime(){
+        Map<DayOfWeek, List<Triple<Time, Time, String>>> gapsByDay = new HashMap<>();
+
+        for (DayOfWeek day : DayOfWeek.values()){
+            List<Event> eventsForDay = schedule.getEventsByDay(day);
+
+            List<Triple<Time, Time, String>> gaps = new ArrayList<>();
+            Time lastEndTime = Time.valueOf("00:00:00");
+
+            for (Event event : eventsForDay) {
+                if (!event.getStartTime().equals(lastEndTime)) {
+                    Triple<Time, Time, String> triple = Triple.of(lastEndTime, event.getStartTime(),event.getRoom().getName());
+                    gaps.add(triple);
+                }
+
+                lastEndTime = event.getEndTime();
+            }
+
+            gapsByDay.put(day, gaps);
+        }
+        return gapsByDay;
+    }
 
 }
