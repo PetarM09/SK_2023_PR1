@@ -19,14 +19,17 @@ import java.util.*;
 
 @Getter
 public class ScheduleManagerImp extends ScheduleManager {
+
+    public Schedule getSchedule() {
+        return schedule;
+    }
     @Override
     protected void loadScheduleFromJSONFile() {
         schedule = new Schedule();
         Scanner scanner = new Scanner(System.in);
-        getDatesAndExceptedDays();
+        //getDatesAndExceptedDays();
         Event event = null;
 
-        System.out.println("Unesite putanju do JSON fajla:");
         String jsonFile = scanner.nextLine();
         Map<String, String> additionalData = new HashMap<>();
 
@@ -43,22 +46,25 @@ public class ScheduleManagerImp extends ScheduleManager {
 
             for (JsonNode eventNode : eventsArray) {
                 additionalData.clear();
+                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                String ucionica = eventNode.get(fieldsNames.get(0)).asText();
+                Date date = format.parse(eventNode.get(fieldsNames.get(1)).asText());
 
-                Date date = new Date(eventNode.get(fieldsNames.get(0)).asText());
-                String ucionica = eventNode.get(fieldsNames.get(1)).asText();
                 String dan = eventNode.get(fieldsNames.get(2)).asText();
                 String termin = eventNode.get(fieldsNames.get(3)).asText();
 
                 for (int i = 4; i < fieldsNames.size(); i++) {
                     additionalData.put(fieldsNames.get(i), eventNode.get(fieldsNames.get(i)).asText());
                 }
-                event = createEventFromFile(date, ucionica, dan, termin, additionalData);
+                event = createEventFromFile(date, null, ucionica, dan, termin, additionalData);
                 schedule.getSchedule().add(event);
 
             }
 
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
         }
     }
     @Override
@@ -66,10 +72,8 @@ public class ScheduleManagerImp extends ScheduleManager {
         schedule = new Schedule();
         Scanner scanner = new Scanner(System.in);
         //getDatesAndExceptedDays();
-        System.out.println("Unesite putanju do fajla:");
         String csvFile = scanner.nextLine();
 
-        List<Event> events = new ArrayList<>();
         try (CSVReader csvReader = new CSVReaderBuilder(new FileReader(csvFile)).build()) {
             Map<String, String> additionalData = new HashMap<>();
             List<String[]> records = csvReader.readAll();
@@ -90,12 +94,13 @@ public class ScheduleManagerImp extends ScheduleManager {
                 }
                 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                 Date date;
+                String ucionica = parts[0];
                 try {
-                    date = format.parse(parts[0]);
+                    date = format.parse(parts[1]);
                 } catch (ParseException e) {
                     throw new RuntimeException(e);
                 }
-                String ucionica = parts[1];
+
                 String dan = parts[2];
 
                 StringBuilder result = new StringBuilder();
@@ -114,9 +119,10 @@ public class ScheduleManagerImp extends ScheduleManager {
                     additionalData.put(head[i], parts[i]);
                 }
 
-                event = createEventFromFile(date, ucionica, dan, termin, additionalData);
-
+                event = createEventFromFile(date, null, ucionica, dan, termin, additionalData);
                 schedule.getSchedule().add(event);
+
+
 
             }
         } catch (IOException | CsvException e) {

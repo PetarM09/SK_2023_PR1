@@ -12,7 +12,10 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import com.opencsv.CSVWriter;
+import com.opencsv.exceptions.CsvException;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.tuple.Pair;
@@ -32,7 +35,7 @@ import java.util.*;
 public abstract class ScheduleManager {
     protected List<Room>rooms = new ArrayList<>();
     protected String input;
-    protected static Schedule schedule;
+    public static Schedule schedule = null;
     protected abstract void loadScheduleFromJSONFile();
     protected abstract void loadScheduleFromCSVFile();
 
@@ -45,7 +48,11 @@ public abstract class ScheduleManager {
         }
         return schedule;
     }
-
+    public void ispis(){
+        for (Event event : schedule.getSchedule()) {
+            System.out.println(event);
+        }
+    }
     private Event parser(String input){
         // Primer formata stringa: "Soba123,2023-10-15,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5"
         // Primer formata stringa: "Soba123,2023-10-15,08:00,2,Dodatne informacije1:2, Dodatna informacija 2:5"
@@ -68,32 +75,46 @@ public abstract class ScheduleManager {
         }
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date date;
+        Date dateTo = null;
         try {
             date = format.parse(parts[1]);
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+        int i = 0;
+
+        if(parts[2].matches("\\d{1,4}-\\d{1,2}-\\d{1,2}")) {
+            i = 1;
+            try {
+                dateTo = format.parse(parts[2]);
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+        }
         LocalDate localDate = LocalDate.parse(parts[1]);
 
-        Time startTime = Time.valueOf(parts[2].concat(":00"));
+        Time startTime = Time.valueOf(parts[2+i].concat(":00"));
         Time endTime;
-        if(parts[3].contains(":")){
-            endTime = Time.valueOf(parts[3].concat(":00"));
+        if(parts[3+i].contains(":")){
+            endTime = Time.valueOf(parts[3+i].concat(":00"));
         }else{
-            double duration = Double.parseDouble(parts[3]);
+            double duration = Double.parseDouble(parts[3+i]);
             endTime = new Time((long) (startTime.getTime() + duration * 60 * 60 * 1000));
         }
 
         DayOfWeek dayOfWeek = localDate.getDayOfWeek();
-        if(parts.length == 4){
+        if(parts.length == 4+i){
             return new Event(date, room, startTime, endTime, dayOfWeek);
         }
         Map<String, String> additionalData = new HashMap<>();
-        for(int i = 4; i < parts.length; i++){
-            String [] token = parts[i].split(":");
+        for(int j = 4+i; j < parts.length; j++){
+            String [] token = parts[j].split(":");
             additionalData.put(token[0], token[1]);
         }
-        return new Event(date, room, startTime, endTime, dayOfWeek, additionalData);
+        if(i == 0)
+            return new Event(date, room, startTime, endTime, dayOfWeek, additionalData);
+        else
+            return new Event(date, dateTo, room, startTime, endTime, dayOfWeek, additionalData);
     }
 
     protected Event findEvent(String input){
@@ -155,6 +176,45 @@ public abstract class ScheduleManager {
         schedule.getSchedule().remove(toUpdate);
         schedule.getSchedule().add(novi);
     }
+    
+    public void loadRoomsFromFile(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Unesite putanju do fajla sa ucionicama: ");
+        String csvFile = scanner.nextLine();
+
+        try (CSVReader csvReader = new CSVReaderBuilder(new FileReader(csvFile)).build()) {
+            Map<String, String> additionalData = new HashMap<>();
+            List<String[]> records = csvReader.readAll();
+            String [] head = new String[0];
+            boolean csv = false;
+            Room room = null;
+
+            for (String[] record : records) {
+                additionalData.clear();
+                String line = Arrays.toString(record);
+                line = line.replace("[", "");
+                line = line.replace("]", "");
+                String[] parts = line.split(";");
+                if (!csv) {
+                    head = parts;
+                    csv = true;
+                    continue;
+                }
+                String roomName = parts[0];
+                int capacity = Integer.parseInt(parts[1]);
+
+                for (int i = 2; i < parts.length; i++) {
+
+                    additionalData.put(head[i], parts[i]);
+                }
+                room = new Room(roomName, capacity, additionalData);
+                System.out.println(room);
+                this.rooms.add(new Room(roomName, capacity, additionalData));
+            }
+        } catch (IOException | CsvException e) {
+            e.printStackTrace();
+        }
+    }
     public void addRoom(String input){
         ///Soba123,capacity
         ///Soba123,capacity, Dodatne informacije1:2, Dodatna informacija 2:5
@@ -197,7 +257,7 @@ public abstract class ScheduleManager {
         }
     }
 
-    protected Event createEventFromFile(Date date, String ucionica, String dan, String termin, Map<String, String> additionalData){
+    protected Event createEventFromFile(Date date, Date dateTo, String ucionica, String dan, String termin, Map<String, String> additionalData){
         Event event = null;
         Room room = null;
         for(Room r : rooms){
@@ -224,7 +284,10 @@ public abstract class ScheduleManager {
             }
             Time startTime = Time.valueOf(token[0]);
             Time endTime = Time.valueOf(token[1]);
-            event = new Event(date, room, startTime, endTime, DayOfWeek.valueOf(dan));
+            if(dateTo == null)
+                event = new Event(date, room, startTime, endTime, DayOfWeek.valueOf(dan));
+            else
+                event = new Event(date, dateTo, room, startTime, endTime, DayOfWeek.valueOf(dan));
             HashMap<String, String> map = (HashMap<String, String>) event.getAdditionalData();
             map.putAll(additionalData);
         }
@@ -303,8 +366,13 @@ public abstract class ScheduleManager {
 
             for (Event event : events) {
                 ObjectNode formattedJson = objectMapper.createObjectNode();
-                if(event.getDate() != null)
+
+                if(event.getDateTo() != null) {
+                    formattedJson.put("Datum od", dateFormat.format(event.getDate()));
+                    formattedJson.put("Datum do", dateFormat.format(event.getDateTo()));
+                }else {
                     formattedJson.put("Datum", dateFormat.format(event.getDate()));
+                }
                 formattedJson.put("Učionica", event.getRoom().getName());
                 formattedJson.put("Dan u nedelji", event.getDayOfWeek().toString());
                 formattedJson.put("Termi", event.getStartTime() + "-" + event.getEndTime());
@@ -326,9 +394,14 @@ public abstract class ScheduleManager {
             file.getParentFile().mkdirs();
             CSVWriter writer = new CSVWriter(new FileWriter(filePath));
             List<String> head = new ArrayList<>();
-            if(schedule.getSchedule().get(0).getDate() != null) {
+
+            if(schedule.getSchedule().get(0).getDateTo() != null) {
+                head.add("Datum od");
+                head.add("Datum do");
+            }else{
                 head.add("Datum");
             }
+
             head.add("Ucionica");
             head.add("Dan u nedelji");
             head.add("Vreme");
@@ -345,8 +418,9 @@ public abstract class ScheduleManager {
             for (Event event : events) {
                 int i=0;
                 String[] rowData = new String[head.size()];
-                if(event.getDate() != null) {
-                    rowData[i++] = dateFormat.format(event.getDate());
+                rowData[i++] = dateFormat.format(event.getDate());
+                if(event.getDateTo() != null) {
+                    rowData[i++] = dateFormat.format(event.getDateTo());
                 }
                 rowData[i++] = event.getRoom().getName();
                 rowData[i++] = event.getDayOfWeek().toString();
@@ -373,7 +447,11 @@ public abstract class ScheduleManager {
 
             document.add(new Paragraph("Raspored"));
             List<String> head = new ArrayList<>();
-            if(schedule.getSchedule().get(0).getDate() != null) {
+
+            if(schedule.getSchedule().get(0).getDateTo() != null) {
+                head.add("Datum od");
+                head.add("Datum do");
+            }else{
                 head.add("Datum");
             }
             head.add("Ucionica");
@@ -397,8 +475,9 @@ public abstract class ScheduleManager {
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
             for (Event event : events) {
                 PdfPCell cell;
-                if (event.getDate() != null) {
-                    table.addCell(new Paragraph(dateFormat.format(event.getDate())));
+                table.addCell(new Paragraph(dateFormat.format(event.getDate())));
+                if (event.getDateTo() != null) {
+                    table.addCell(new Paragraph(dateFormat.format(event.getDateTo())));
                 }
                 cell = new PdfPCell(new Paragraph(event.getRoom().getName()));
                 table.addCell(cell);
@@ -432,8 +511,8 @@ public abstract class ScheduleManager {
         return false;
     }
 
-    //Pretrazivanje termina po additionalData podacima
-    /*public List searchAdditionalData(String input){
+   // Pretrazivanje termina po additionalData podacima
+    public List searchAdditionalData(String input){
         //Ocekuje se format Key:Value
 
         String[] parts = input.split(":");
@@ -442,43 +521,76 @@ public abstract class ScheduleManager {
         //mapa svih eventova
         List<Event> events = schedule.getSchedule();
 
-        for (Map.Entry<DayOfWeek, List<Event>> entry: schedule.getSchedule().entrySet()){
-            //Lista eventova za taj dan
-            List<Event> listaZaDan = entry.getValue();
 
-            for (Event event : listaZaDan){
-                //Additional data za event
-                Map<String, String > data = event.getAdditionalData();
+        for (Event event : events) {
+            //Additional data za event
+            Map<String, String> data = event.getAdditionalData();
 
-                //Sadrzi onaj additional data po kom se pretrazuje
-                if (data.containsKey(parts[0])){
+            //Sadrzi onaj additional data po kom se pretrazuje
+            if (data.containsKey(parts[0])) {
+                if(data.get(parts[0]).equals(parts[1])) {
                     found.add(event);
+                    System.out.println(event);
                 }
             }
+
         }
         return found;
-    }*/
+    }
+
+    private Map<String, List<Event>> sortEventsByRoom(List<Event> events){
+        Map<String, List<Event>> eventsPerRoom = new HashMap<>();
+        for (Event event : events) {
+
+            if (!eventsPerRoom.containsKey(event.getRoom().getName())) {
+                eventsPerRoom.put(event.getRoom().getName(), new ArrayList<>());
+            }
+
+            eventsPerRoom.get(event.getRoom().getName()).add(event);
+        }
+        
+        return eventsPerRoom;
+    }
 
     //Pretrazivanje slobodnih termina
-    public Map<DayOfWeek, List<Triple<Time, Time, String>>> findAvailableTime(){
-        Map<DayOfWeek, List<Triple<Time, Time, String>>> gapsByDay = new HashMap<>();
+    public Map<DayOfWeek, List<Triple<Date, Pair<Time,Time>, String>>> findAvailableTime(){
+        //DATUM, vremeOD, vremeDO, UCIONICA
+        //DATU, vremeOD, vremeDO, UCIONICA
+
+        //Datum, ucionica
+        //Termin1-termin2, termin3-termin4, termin5-termin6
+
+        Triple<Date, Pair<Time,Time>, String> oblik;
+
+        Map<DayOfWeek, List<Triple<Date, Pair<Time,Time>, String>>> gapsByDay = new HashMap<>();
 
         for (DayOfWeek day : DayOfWeek.values()){
             List<Event> eventsForDay = schedule.getEventsByDay(day);
 
-            List<Triple<Time, Time, String>> gaps = new ArrayList<>();
-            Time lastEndTime = Time.valueOf("00:00:00");
+            Map<String,List<Event>> eventsPerRoom = sortEventsByRoom(eventsForDay);
 
-            for (Event event : eventsForDay) {
-                if (!event.getStartTime().equals(lastEndTime)) {
-                    Triple<Time, Time, String> triple = Triple.of(lastEndTime, event.getStartTime(),event.getRoom().getName());
-                    gaps.add(triple);
+            for (String soba : eventsPerRoom.keySet()){
+                List<Triple<Date, Pair<Time,Time>, String>> gaps = new ArrayList<>();
+                Time lastEndTime = Time.valueOf("00:00:00");
+                List<Event> sortedList = new ArrayList<>(eventsPerRoom.get(soba));
+                sortedList.sort(Comparator.comparing(Event::getStartTime));
+                for (Event event : sortedList) {
+
+                    if (!event.getStartTime().equals(lastEndTime)) {
+                        Triple<Date, Pair<Time,Time>, String> triple = Triple.of(event.getDate(), Pair.of(lastEndTime, event.getStartTime()), event.getRoom().getName());
+                        gaps.add(triple);
+                    }
+
+                    lastEndTime = event.getEndTime();
                 }
 
-                lastEndTime = event.getEndTime();
+                if (!lastEndTime.equals(Time.valueOf("23:59:59"))){
+                    Triple<Date, Pair<Time,Time>, String> triple = Triple.of(sortedList.get(sortedList.size()-1).getDate(), Pair.of(sortedList.get(sortedList.size()-1).getEndTime(), Time.valueOf("23:59:59")), sortedList.get(sortedList.size()-1).getRoom().getName());
+                    gaps.add(triple);
+                }
+                System.out.println(day + " \n" + gaps);
+                gapsByDay.put(day, gaps);
             }
-
-            gapsByDay.put(day, gaps);
         }
         return gapsByDay;
     }

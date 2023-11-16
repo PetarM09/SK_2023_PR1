@@ -15,6 +15,7 @@ import java.util.Map;
 public class Event {
     private Date date;
     private Room room;
+    private Date dateTo;
     private Time startTime;
     private Time endTime;
     private DayOfWeek dayOfWeek;
@@ -40,19 +41,31 @@ public class Event {
         this.dayOfWeek = dayOfWeek;
     }
 
-    public Event(Room room, Time startTime, Time endTime, DayOfWeek dayOfWeek) {
-        this.additionalData = new HashMap<>();
-        this.room = room;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.dayOfWeek = dayOfWeek;
-        this.additionalData = additionalData;
+    public Event(Date date, Date dateTo, Room room, Time startTime, Time endTime, DayOfWeek dayOfWeek, Map<String, String > additionalData) {
+        this(date, room, startTime, endTime, dayOfWeek, additionalData);
+        this.dateTo = dateTo;
+    }
+
+    public Event(Date date, Date dateTo, Room room, Time startTime, Time endTime, DayOfWeek dayOfWeek) {
+        this(date, room, startTime, endTime, dayOfWeek);
+        this.dateTo = dateTo;
     }
 
     @Override
     public String toString() {
-        return "Event{" +
+        if(dateTo == null)
+            return "Event{" +
                 "datum=" + date +
+                ", ucionica=" + room.getName() +
+                ", vreme pocetka=" + startTime +
+                ", vreme kraja=" + endTime +
+                ", dan u nedelji=" + dayOfWeek +
+                 additionalData +
+                '}';
+        else
+            return "Event{" +
+                "datum od=" + date +
+                ", datum do=" + dateTo +
                 ", ucionica=" + room.getName() +
                 ", vreme pocetka=" + startTime +
                 ", vreme kraja=" + endTime +

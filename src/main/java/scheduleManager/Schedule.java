@@ -25,13 +25,15 @@ public class Schedule {
 
     public List<Event> sortByDate(){
         List<Event> events = new ArrayList<>(schedule);
-        if(events.get(0).getDate() != null)
+        if(events.get(0).getDateTo() != null)
+            events.sort(Comparator.comparing(Event::getDate).thenComparing(Event::getDateTo));
+        else
             events.sort(Comparator.comparing(Event::getDate));
         return events;
     }
 
     public List<Event> sortByDayOfWeekDay(){
-        ///Sortiranje prvo do dana u nedelji, pa po datumu ako datum nije null
+        //Sortiranje prvo do dana u nedelji, pa po datumu ako datum nije null
         List<Event> events = new ArrayList<>(schedule);
         if(events.get(0).getDate() == null)
             events.sort(Comparator.comparing(Event::getDayOfWeek));
@@ -53,13 +55,18 @@ public class Schedule {
     }
 
     public List<Event> sortByAdditionalData(String kriterijum1) {
-        List<Event> events = new ArrayList<>();
-        String []token = kriterijum1.split(":");
-        if(token.length != 2)
+        String[] token = kriterijum1.split(":");
+        if (token.length != 2) {
             throw new IllegalArgumentException("Kriterijum mora biti u formatu kljuc:vrednost");
-        if(schedule.get(0).getAdditionalData().containsKey(token[0]))
-            events = schedule.stream().filter(e -> e.getAdditionalData().get(token[0]).equals(token[1])).collect(Collectors.toList());
-        return events;
+        }
+
+        return schedule.stream()
+                .filter(e -> e.getAdditionalData().containsKey(token[0]) && e.getAdditionalData().get(token[0]).equals(token[1]))
+                .sorted(Comparator
+                        .comparing((Event e) -> e.getAdditionalData().get(token[0]))
+                        .thenComparing(Event::getDate)
+                        .thenComparing(Event::getDateTo))
+                .collect(Collectors.toList());
     }
 
     public List<Event> getEventsByDay(DayOfWeek day){
@@ -70,10 +77,7 @@ public class Schedule {
                 events.add(event);
             }
         }
-
-        if(events.get(0).getDate() != null)
-            events.sort(Comparator.comparing(Event::getDate));
-
+        events.sort(Comparator.comparing(Event::getDate));
         return events;
     }
 }

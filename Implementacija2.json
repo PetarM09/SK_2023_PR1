@@ -1,6 +1,8 @@
 [
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-02-07",
+    "Datum do": "2023-08-01",
     "Dan": "TUESDAY",
     "Termin": "11:15:00-13",
     "Predmet": "Poslovne aplikacije",
@@ -10,6 +12,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-05-22",
+    "Datum do": "2023-12-04",
     "Dan": "MONDAY",
     "Termin": "13:15-15",
     "Predmet": "Uvod u programiranje",
@@ -19,6 +23,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-05-02",
+    "Datum do": "2023-11-07",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Uvod u programiranje",
@@ -28,6 +34,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-06-27",
+    "Datum do": "2023-10-17",
     "Dan": "TUESDAY",
     "Termin": "17:15-20",
     "Predmet": "Diskretne strukture",
@@ -37,6 +45,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-03-08",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Diskretne strukture",
@@ -46,6 +56,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-06-27",
+    "Datum do": "2023-09-26",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Engleski 1",
@@ -55,6 +67,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-01-11",
+    "Datum do": "2023-09-27",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-21",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -64,6 +78,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-30",
+    "Datum do": "2023-09-07",
     "Dan": "THURSDAY",
     "Termin": "18:15-21",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -73,6 +89,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-01-02",
+    "Datum do": "2023-07-31",
     "Dan": "MONDAY",
     "Termin": "11:15-13",
     "Predmet": "Uvod u programiranje",
@@ -82,6 +100,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-03-27",
+    "Datum do": "2023-10-09",
     "Dan": "MONDAY",
     "Termin": "13:15-15",
     "Predmet": "Poslovne aplikacije",
@@ -91,6 +111,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-02-20",
+    "Datum do": "2023-09-18",
     "Dan": "MONDAY",
     "Termin": "15:15-17",
     "Predmet": "Uvod u programiranje",
@@ -100,6 +122,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-02-02",
+    "Datum do": "2023-09-07",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Uvod u programiranje",
@@ -109,6 +133,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-06-15",
+    "Datum do": "2023-10-19",
     "Dan": "THURSDAY",
     "Termin": "13:15-15",
     "Predmet": "Poslovne aplikacije",
@@ -118,6 +144,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-06-22",
+    "Datum do": "2023-08-31",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Uvod u programiranje",
@@ -127,6 +155,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-04-03",
+    "Datum do": "2023-10-30",
     "Dan": "MONDAY",
     "Termin": "14:15-16",
     "Predmet": "Uvod u programiranje",
@@ -136,6 +166,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-04-10",
+    "Datum do": "2023-10-30",
     "Dan": "MONDAY",
     "Termin": "15:15-17",
     "Predmet": "Poslovne aplikacije",
@@ -145,6 +177,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-05-31",
+    "Datum do": "2024-01-03",
     "Dan": "WEDNESDAY",
     "Termin": "10:15-12",
     "Predmet": "Uvod u programiranje",
@@ -154,6 +188,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-05-03",
+    "Datum do": "2024-01-03",
     "Dan": "WEDNESDAY",
     "Termin": "12:15-14",
     "Predmet": "Uvod u programiranje",
@@ -163,6 +199,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-09-20",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-19",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -172,6 +210,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-05-30",
+    "Datum do": "2023-07-25",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Diskretne strukture",
@@ -181,6 +221,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-01-06",
+    "Datum do": "2023-10-13",
     "Dan": "FRIDAY",
     "Termin": "18:15-21",
     "Predmet": "Diskretne strukture",
@@ -190,6 +232,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-07-06",
+    "Datum do": "2023-11-09",
     "Dan": "THURSDAY",
     "Termin": "13:15-15",
     "Predmet": "Uvod u programiranje",
@@ -199,6 +243,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-03-21",
+    "Datum do": "2023-09-12",
     "Dan": "TUESDAY",
     "Termin": "17:15-20",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -208,6 +254,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-03-20",
+    "Datum do": "2023-11-13",
     "Dan": "MONDAY",
     "Termin": "17:15-19",
     "Predmet": "Engleski 1",
@@ -217,6 +265,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-04-06",
+    "Datum do": "2023-08-17",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Poslovne aplikacije",
@@ -226,6 +276,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-06-06",
+    "Datum do": "2023-12-12",
     "Dan": "TUESDAY",
     "Termin": "18:15-20",
     "Predmet": "Uvod u programiranje",
@@ -235,6 +287,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-03-21",
+    "Datum do": "2023-08-15",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Uvod u programiranje",
@@ -244,6 +298,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-07-07",
+    "Datum do": "2023-09-01",
     "Dan": "FRIDAY",
     "Termin": "15:15-18",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -253,6 +309,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-02-22",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Poslovne aplikacije",
@@ -262,6 +320,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-05-04",
+    "Datum do": "2023-12-28",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Uvod u programiranje",
@@ -271,6 +331,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-02-15",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "10:15-12",
     "Predmet": "Uvod u programiranje",
@@ -280,6 +342,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-01-31",
+    "Datum do": "2023-12-12",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Engleski 1",
@@ -289,6 +353,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-02-27",
+    "Datum do": "2023-11-06",
     "Dan": "MONDAY",
     "Termin": "17:15-20",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -298,6 +364,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-05-15",
+    "Datum do": "2023-12-25",
     "Dan": "MONDAY",
     "Termin": "11:15-13",
     "Predmet": "Poslovne aplikacije",
@@ -307,6 +375,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-03-24",
+    "Datum do": "2023-09-15",
     "Dan": "FRIDAY",
     "Termin": "18:15-20",
     "Predmet": "Uvod u programiranje",
@@ -316,6 +386,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-20",
+    "Datum do": "2023-09-04",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Uvod u programiranje",
@@ -325,6 +397,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-06-21",
+    "Datum do": "2023-10-04",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Diskretne strukture",
@@ -334,6 +408,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-04-14",
+    "Datum do": "2023-11-24",
     "Dan": "FRIDAY",
     "Termin": "15:15-18",
     "Predmet": "Diskretne strukture",
@@ -343,6 +419,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-30",
+    "Datum do": "2023-11-02",
     "Dan": "THURSDAY",
     "Termin": "16:15-18",
     "Predmet": "Uvod u programiranje",
@@ -352,6 +430,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-06-22",
+    "Datum do": "2023-09-21",
     "Dan": "THURSDAY",
     "Termin": "13:15-16",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -361,6 +441,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-04-11",
+    "Datum do": "2024-01-02",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Poslovne aplikacije",
@@ -370,6 +452,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-06-29",
+    "Datum do": "2023-10-05",
     "Dan": "THURSDAY",
     "Termin": "18:15-20",
     "Predmet": "Uvod u programiranje",
@@ -379,6 +463,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-01-24",
+    "Datum do": "2023-08-08",
     "Dan": "TUESDAY",
     "Termin": "11:15-13",
     "Predmet": "Uvod u programiranje",
@@ -388,6 +474,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-05-26",
+    "Datum do": "2024-01-05",
     "Dan": "FRIDAY",
     "Termin": "10:15-12",
     "Predmet": "Engleski 1",
@@ -397,6 +485,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-02-24",
+    "Datum do": "2023-11-10",
     "Dan": "FRIDAY",
     "Termin": "12:15-15",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -406,6 +496,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-02-01",
+    "Datum do": "2023-12-13",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Poslovne aplikacije",
@@ -415,6 +507,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-01-24",
+    "Datum do": "2023-08-08",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Uvod u programiranje",
@@ -424,6 +518,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-01-24",
+    "Datum do": "2023-12-26",
     "Dan": "TUESDAY",
     "Termin": "19:15-21",
     "Predmet": "Uvod u programiranje",
@@ -433,6 +529,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-04-18",
+    "Datum do": "2023-09-05",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Poslovne aplikacije",
@@ -442,6 +540,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-05-01",
+    "Datum do": "2023-11-27",
     "Dan": "MONDAY",
     "Termin": "19:15-21",
     "Predmet": "Uvod u programiranje",
@@ -451,6 +551,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-07-12",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Uvod u programiranje",
@@ -460,6 +562,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-04-11",
+    "Datum do": "2023-07-25",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Engleski 1",
@@ -469,6 +573,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-02-28",
+    "Datum do": "2023-08-15",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Diskretne strukture",
@@ -478,6 +584,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-04-17",
+    "Datum do": "2023-07-10",
     "Dan": "MONDAY",
     "Termin": "12:15-15",
     "Predmet": "Diskretne strukture",
@@ -487,6 +595,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-04-12",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "19:15-21",
     "Predmet": "Uvod u programiranje",
@@ -496,6 +606,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-01-02",
+    "Datum do": "2023-08-07",
     "Dan": "MONDAY",
     "Termin": "15:15-18",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -505,6 +617,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-07-03",
+    "Datum do": "2023-08-21",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Poslovne aplikacije",
@@ -514,6 +628,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-06-15",
+    "Datum do": "2023-09-28",
     "Dan": "THURSDAY",
     "Termin": "17:15-19",
     "Predmet": "Uvod u programiranje",
@@ -523,6 +639,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-02-02",
+    "Datum do": "2023-08-03",
     "Dan": "THURSDAY",
     "Termin": "13:15-15",
     "Predmet": "Uvod u programiranje",
@@ -532,6 +650,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-06-09",
+    "Datum do": "2023-08-18",
     "Dan": "FRIDAY",
     "Termin": "14:15-17",
     "Predmet": "Linearna algebra i analiticka geometrija",
@@ -541,6 +661,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-05-17",
+    "Datum do": "2023-10-18",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-17",
     "Predmet": "Poslovne aplikacije",
@@ -550,6 +672,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-06-13",
+    "Datum do": "2023-08-22",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Uvod u programiranje",
@@ -559,6 +683,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-26",
+    "Datum do": "2023-10-19",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Uvod u programiranje",
@@ -568,6 +694,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-01-24",
+    "Datum do": "2023-12-26",
     "Dan": "TUESDAY",
     "Termin": "09:15-11",
     "Predmet": "Poslovne aplikacije",
@@ -577,6 +705,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-06-16",
+    "Datum do": "2023-12-08",
     "Dan": "FRIDAY",
     "Termin": "12:15-14",
     "Predmet": "Uvod u programiranje",
@@ -586,6 +716,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-05-24",
+    "Datum do": "2023-11-22",
     "Dan": "WEDNESDAY",
     "Termin": "17:15-19",
     "Predmet": "Uvod u programiranje",
@@ -595,6 +727,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-02-27",
+    "Datum do": "2023-08-07",
     "Dan": "MONDAY",
     "Termin": "19:15-21",
     "Predmet": "Engleski 1",
@@ -604,6 +738,8 @@
   },
   {
     "Učionica": "Raf12 (MD)",
+    "Datum od": "2023-02-09",
+    "Datum do": "2023-12-14",
     "Dan": "THURSDAY",
     "Termin": "15:15-18",
     "Predmet": "Crtanje i slikanje",
@@ -613,6 +749,8 @@
   },
   {
     "Učionica": "Raf12 (MD)",
+    "Datum od": "2023-02-08",
+    "Datum do": "2023-08-30",
     "Dan": "WEDNESDAY",
     "Termin": "14:15-17",
     "Predmet": "Crtanje i slikanje",
@@ -622,6 +760,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-04-24",
+    "Datum do": "2023-10-02",
     "Dan": "MONDAY",
     "Termin": "14:15-17",
     "Predmet": "Osnovi oblikovanja",
@@ -631,6 +771,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-03-31",
+    "Datum do": "2023-09-22",
     "Dan": "FRIDAY",
     "Termin": "09:15-12",
     "Predmet": "Osnovi projektovanja",
@@ -640,6 +782,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-24",
+    "Datum do": "2023-08-11",
     "Dan": "FRIDAY",
     "Termin": "12:15-14",
     "Predmet": "Engleski 1",
@@ -649,6 +793,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-04-12",
+    "Datum do": "2023-11-15",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Uvod u muzicku produkciju",
@@ -658,6 +804,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-02-28",
+    "Datum do": "2023-09-05",
     "Dan": "TUESDAY",
     "Termin": "15:15-18",
     "Predmet": "Osnovi oblikovanja",
@@ -667,6 +815,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-06-19",
+    "Datum do": "2023-10-02",
     "Dan": "MONDAY",
     "Termin": "11:15-14",
     "Predmet": "Osnovi projektovanja",
@@ -676,6 +826,8 @@
   },
   {
     "Učionica": "Raf12 (MD)",
+    "Datum od": "2023-01-16",
+    "Datum do": "2023-10-09",
     "Dan": "MONDAY",
     "Termin": "09:15-12",
     "Predmet": "Crtanje i slikanje",
@@ -685,6 +837,8 @@
   },
   {
     "Učionica": "Raf12 (MD)",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-08-02",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-14",
     "Predmet": "Crtanje i slikanje",
@@ -694,6 +848,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-02-23",
+    "Datum do": "2023-11-09",
     "Dan": "THURSDAY",
     "Termin": "12:15-15",
     "Predmet": "Osnovi oblikovanja",
@@ -703,6 +859,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-01-31",
+    "Datum do": "2023-07-25",
     "Dan": "TUESDAY",
     "Termin": "09:15-12",
     "Predmet": "Osnovi projektovanja",
@@ -712,6 +870,8 @@
   },
   {
     "Učionica": "Raf12 (MD)",
+    "Datum od": "2023-06-08",
+    "Datum do": "2023-08-03",
     "Dan": "THURSDAY",
     "Termin": "09:15-12",
     "Predmet": "Crtanje i slikanje",
@@ -721,6 +881,8 @@
   },
   {
     "Učionica": "Raf12 (MD)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-10-17",
     "Dan": "TUESDAY",
     "Termin": "12:15-15",
     "Predmet": "Crtanje i slikanje",
@@ -730,6 +892,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-04-24",
+    "Datum do": "2023-08-28",
     "Dan": "MONDAY",
     "Termin": "17:15-20",
     "Predmet": "Osnovi oblikovanja",
@@ -739,6 +903,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-06-05",
+    "Datum do": "2023-11-13",
     "Dan": "MONDAY",
     "Termin": "14:15-17",
     "Predmet": "Osnovi projektovanja",
@@ -748,6 +914,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-17",
+    "Datum do": "2023-09-01",
     "Dan": "FRIDAY",
     "Termin": "09:15-12",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -757,6 +925,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-05-26",
+    "Datum do": "2023-08-25",
     "Dan": "FRIDAY",
     "Termin": "12:15-15",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -766,6 +936,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-03-15",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "19:15-21",
     "Predmet": "Organizacija racunara",
@@ -775,6 +947,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-05-22",
+    "Datum do": "2023-10-23",
     "Dan": "MONDAY",
     "Termin": "09:15-12",
     "Predmet": "Osnovi programiranja",
@@ -784,6 +958,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-09",
+    "Datum do": "2023-11-30",
     "Dan": "THURSDAY",
     "Termin": "13:15-15",
     "Predmet": "Praktikum iz arhitekture racunara i operativnih sistema",
@@ -793,6 +969,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-04-18",
+    "Datum do": "2023-10-24",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Engleski 1",
@@ -802,6 +980,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-06-14",
+    "Datum do": "2023-10-25",
     "Dan": "WEDNESDAY",
     "Termin": "14:15-17",
     "Predmet": "Organizacija racunara",
@@ -811,6 +991,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-05-03",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "17:15-19",
     "Predmet": "Osnovi programiranja",
@@ -820,6 +1002,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-04-13",
+    "Datum do": "2023-12-14",
     "Dan": "THURSDAY",
     "Termin": "09:15-12",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -829,6 +1013,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-06-01",
+    "Datum do": "2023-09-28",
     "Dan": "THURSDAY",
     "Termin": "12:15-15",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -838,6 +1024,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-01-03",
+    "Datum do": "2023-09-05",
     "Dan": "TUESDAY",
     "Termin": "19:15-21",
     "Predmet": "Organizacija racunara",
@@ -847,6 +1035,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-03-17",
+    "Datum do": "2023-12-29",
     "Dan": "FRIDAY",
     "Termin": "11:15-14",
     "Predmet": "Osnovi programiranja",
@@ -856,6 +1046,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-02-03",
+    "Datum do": "2023-08-11",
     "Dan": "FRIDAY",
     "Termin": "09:15-11",
     "Predmet": "Praktikum iz arhitekture racunara i operativnih sistema",
@@ -865,6 +1057,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-04-10",
+    "Datum do": "2023-07-10",
     "Dan": "MONDAY",
     "Termin": "12:15-15",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -874,6 +1068,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-01-17",
+    "Datum do": "2023-12-19",
     "Dan": "TUESDAY",
     "Termin": "10:15-13",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -883,6 +1079,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-06-14",
+    "Datum do": "2023-11-29",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Organizacija racunara",
@@ -892,6 +1090,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-05-18",
+    "Datum do": "2023-09-28",
     "Dan": "THURSDAY",
     "Termin": "16:15-19",
     "Predmet": "Osnovi programiranja",
@@ -901,6 +1101,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-06-07",
+    "Datum do": "2023-11-01",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Praktikum iz arhitekture racunara i operativnih sistema",
@@ -910,6 +1112,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-02-20",
+    "Datum do": "2023-10-16",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Engleski 1",
@@ -919,6 +1123,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-05-16",
+    "Datum do": "2023-10-24",
     "Dan": "TUESDAY",
     "Termin": "13:15-16",
     "Predmet": "Organizacija racunara",
@@ -928,6 +1134,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-01-24",
+    "Datum do": "2023-11-28",
     "Dan": "TUESDAY",
     "Termin": "16:15-18",
     "Predmet": "Osnovi programiranja",
@@ -937,6 +1145,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-01-05",
+    "Datum do": "2023-09-14",
     "Dan": "THURSDAY",
     "Termin": "13:15-16",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -946,6 +1156,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-07-05",
+    "Datum do": "2023-09-20",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-14",
     "Predmet": "Administracija i odrzavanje sistema 1",
@@ -955,6 +1167,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-01-19",
+    "Datum do": "2023-07-27",
     "Dan": "THURSDAY",
     "Termin": "16:15-18",
     "Predmet": "Organizacija racunara",
@@ -964,6 +1178,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-04-24",
+    "Datum do": "2023-09-18",
     "Dan": "MONDAY",
     "Termin": "13:15-16",
     "Predmet": "Osnovi programiranja",
@@ -973,6 +1189,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-06-22",
+    "Datum do": "2023-07-13",
     "Dan": "THURSDAY",
     "Termin": "18:15-20",
     "Predmet": "Praktikum iz arhitekture racunara i operativnih sistema",
@@ -982,6 +1200,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-03-28",
+    "Datum do": "2023-11-14",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Algoritmi i strukture podataka",
@@ -991,6 +1211,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-06-13",
+    "Datum do": "2023-09-05",
     "Dan": "TUESDAY",
     "Termin": "14:15-17",
     "Predmet": "Dizajn softvera",
@@ -1000,6 +1222,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-04-11",
+    "Datum do": "2023-10-17",
     "Dan": "TUESDAY",
     "Termin": "11:15-14",
     "Predmet": "Inteligentni sistemi",
@@ -1009,6 +1233,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-16",
+    "Datum do": "2023-11-30",
     "Dan": "THURSDAY",
     "Termin": "11:15-14",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1018,6 +1244,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-02",
+    "Datum do": "2023-12-14",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Dizajn softvera",
@@ -1027,6 +1255,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-20",
+    "Datum do": "2023-09-18",
     "Dan": "MONDAY",
     "Termin": "15:15-18",
     "Predmet": "Inteligentni sistemi",
@@ -1036,6 +1266,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-01-25",
+    "Datum do": "2023-07-19",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Napredna matematicka analiza",
@@ -1045,6 +1277,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-06-14",
+    "Datum do": "2023-09-13",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Napredna matematicka analiza",
@@ -1054,6 +1288,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-09-06",
     "Dan": "WEDNESDAY",
     "Termin": "17:15-19",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1063,6 +1299,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-03-10",
+    "Datum do": "2023-08-11",
     "Dan": "FRIDAY",
     "Termin": "18:15-21",
     "Predmet": "Dizajn softvera",
@@ -1072,6 +1310,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-06-02",
+    "Datum do": "2023-10-27",
     "Dan": "FRIDAY",
     "Termin": "14:15-17",
     "Predmet": "Inteligentni sistemi",
@@ -1081,6 +1321,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-05-16",
+    "Datum do": "2023-10-31",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1090,6 +1332,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-07-07",
+    "Datum do": "2023-09-29",
     "Dan": "FRIDAY",
     "Termin": "15:15-18",
     "Predmet": "Dizajn softvera",
@@ -1099,6 +1343,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-04-21",
+    "Datum do": "2023-07-28",
     "Dan": "FRIDAY",
     "Termin": "11:15-14",
     "Predmet": "Inteligentni sistemi",
@@ -1108,6 +1354,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-01-18",
+    "Datum do": "2023-09-13",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-20",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1117,6 +1365,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-11-14",
     "Dan": "TUESDAY",
     "Termin": "09:15-12",
     "Predmet": "Dizajn softvera",
@@ -1126,6 +1376,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-02-23",
+    "Datum do": "2023-10-05",
     "Dan": "THURSDAY",
     "Termin": "17:15-20",
     "Predmet": "Inteligentni sistemi",
@@ -1135,6 +1387,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-18",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1144,6 +1398,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-06-01",
+    "Datum do": "2023-10-26",
     "Dan": "THURSDAY",
     "Termin": "14:15-16",
     "Predmet": "Dizajn softvera",
@@ -1153,6 +1409,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-03-30",
+    "Datum do": "2023-09-07",
     "Dan": "THURSDAY",
     "Termin": "11:15-14",
     "Predmet": "Inteligentni sistemi",
@@ -1162,6 +1420,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-04-07",
+    "Datum do": "2023-08-04",
     "Dan": "FRIDAY",
     "Termin": "10:15-12",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1171,6 +1431,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-02-08",
+    "Datum do": "2023-07-26",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-21",
     "Predmet": "Dizajn softvera",
@@ -1180,6 +1442,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-04-14",
+    "Datum do": "2023-08-04",
     "Dan": "FRIDAY",
     "Termin": "14:15-17",
     "Predmet": "Inteligentni sistemi",
@@ -1189,6 +1453,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-11-08",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1198,6 +1464,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-06-30",
+    "Datum do": "2023-10-20",
     "Dan": "FRIDAY",
     "Termin": "09:15-12",
     "Predmet": "Dizajn softvera",
@@ -1207,6 +1475,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-02-20",
+    "Datum do": "2023-08-07",
     "Dan": "MONDAY",
     "Termin": "11:15-14",
     "Predmet": "Inteligentni sistemi",
@@ -1216,6 +1486,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-06-27",
+    "Datum do": "2023-10-24",
     "Dan": "TUESDAY",
     "Termin": "09:15-11",
     "Predmet": "Napredna matematicka analiza",
@@ -1225,6 +1497,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-07-04",
+    "Datum do": "2023-12-26",
     "Dan": "TUESDAY",
     "Termin": "11:15-13",
     "Predmet": "Napredna matematicka analiza",
@@ -1234,6 +1508,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-03-28",
+    "Datum do": "2023-09-26",
     "Dan": "TUESDAY",
     "Termin": "19:15-21",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1243,6 +1519,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-01-16",
+    "Datum do": "2023-10-02",
     "Dan": "MONDAY",
     "Termin": "17:15-20",
     "Predmet": "Signali i sistemi",
@@ -1252,6 +1530,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-07-03",
+    "Datum do": "2023-10-23",
     "Dan": "MONDAY",
     "Termin": "15:15-17",
     "Predmet": "Napredna matematicka analiza",
@@ -1261,6 +1541,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-04-27",
+    "Datum do": "2023-09-07",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Napredna matematicka analiza",
@@ -1270,6 +1552,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-07-06",
+    "Datum do": "2023-11-02",
     "Dan": "THURSDAY",
     "Termin": "14:15-17",
     "Predmet": "Osnovi elektronike",
@@ -1279,6 +1563,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-02-01",
+    "Datum do": "2023-09-27",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-19",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1288,6 +1574,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-05-29",
+    "Datum do": "2023-09-04",
     "Dan": "MONDAY",
     "Termin": "13:15-15",
     "Predmet": "Osnovi elektronike",
@@ -1297,6 +1585,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-01",
+    "Datum do": "2023-11-01",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-16",
     "Predmet": "Signali i sistemi",
@@ -1306,6 +1596,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-01-09",
+    "Datum do": "2023-12-04",
     "Dan": "MONDAY",
     "Termin": "19:15-21",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1315,6 +1607,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-01-26",
+    "Datum do": "2023-10-05",
     "Dan": "THURSDAY",
     "Termin": "17:15-20",
     "Predmet": "Signali i sistemi",
@@ -1324,6 +1618,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-02-28",
+    "Datum do": "2023-10-24",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Algoritmi i strukture podataka",
@@ -1333,6 +1629,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-02-28",
+    "Datum do": "2023-11-14",
     "Dan": "TUESDAY",
     "Termin": "14:15-17",
     "Predmet": "Osnovi elektronike",
@@ -1342,6 +1640,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-04-17",
+    "Datum do": "2024-01-01",
     "Dan": "MONDAY",
     "Termin": "17:15-20",
     "Predmet": "Signali i sistemi",
@@ -1351,6 +1651,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-04-07",
+    "Datum do": "2023-11-03",
     "Dan": "FRIDAY",
     "Termin": "11:15-13",
     "Predmet": "Fotografija",
@@ -1360,6 +1662,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-05-09",
+    "Datum do": "2023-08-08",
     "Dan": "TUESDAY",
     "Termin": "09:15-12",
     "Predmet": "Fotografija",
@@ -1369,6 +1673,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-03-07",
+    "Datum do": "2023-11-07",
     "Dan": "TUESDAY",
     "Termin": "12:15-14",
     "Predmet": "Pismo i tipografija",
@@ -1378,6 +1684,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-12-20",
     "Dan": "WEDNESDAY",
     "Termin": "12:15-15",
     "Predmet": "Pismo i tipografija",
@@ -1387,6 +1695,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-01-02",
+    "Datum do": "2023-07-24",
     "Dan": "MONDAY",
     "Termin": "09:15-12",
     "Predmet": "Modelovanje",
@@ -1396,6 +1706,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-02-08",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Modelovanje",
@@ -1405,6 +1717,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-02-09",
+    "Datum do": "2023-12-14",
     "Dan": "THURSDAY",
     "Termin": "14:15-16",
     "Predmet": "Istorija umetnosti",
@@ -1414,6 +1728,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-06-15",
+    "Datum do": "2023-12-28",
     "Dan": "THURSDAY",
     "Termin": "16:15-18",
     "Predmet": "Istorija umetnosti",
@@ -1423,6 +1739,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-06-16",
+    "Datum do": "2023-12-22",
     "Dan": "FRIDAY",
     "Termin": "15:15-17",
     "Predmet": "Fotografija",
@@ -1432,6 +1750,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-17",
     "Predmet": "Fotografija",
@@ -1441,6 +1761,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-02-10",
+    "Datum do": "2023-10-13",
     "Dan": "FRIDAY",
     "Termin": "09:15-11",
     "Predmet": "Fotografija",
@@ -1450,6 +1772,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-04-17",
+    "Datum do": "2023-07-24",
     "Dan": "MONDAY",
     "Termin": "12:15-15",
     "Predmet": "Fotografija",
@@ -1459,6 +1783,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-05-24",
+    "Datum do": "2023-07-19",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Fotografija",
@@ -1468,6 +1794,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-07-07",
+    "Datum do": "2023-12-29",
     "Dan": "FRIDAY",
     "Termin": "16:15-18",
     "Predmet": "Pismo i tipografija",
@@ -1477,6 +1805,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-04-12",
+    "Datum do": "2023-09-27",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-18",
     "Predmet": "Pismo i tipografija",
@@ -1486,6 +1816,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-02-22",
+    "Datum do": "2023-07-12",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-14",
     "Predmet": "Modelovanje",
@@ -1495,6 +1827,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-05-18",
+    "Datum do": "2023-08-10",
     "Dan": "THURSDAY",
     "Termin": "19:15-21",
     "Predmet": "Modelovanje",
@@ -1504,6 +1838,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-03-24",
+    "Datum do": "2023-07-21",
     "Dan": "FRIDAY",
     "Termin": "13:15-15",
     "Predmet": "Fotografija",
@@ -1513,6 +1849,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-06",
+    "Datum do": "2023-08-11",
     "Dan": "FRIDAY",
     "Termin": "11:15-14",
     "Predmet": "Dizajn i razvoj veb strana",
@@ -1522,6 +1860,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-05-08",
+    "Datum do": "2023-08-28",
     "Dan": "MONDAY",
     "Termin": "15:15-18",
     "Predmet": "Informacioni sistemi",
@@ -1531,6 +1871,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-08",
+    "Datum do": "2023-12-06",
     "Dan": "WEDNESDAY",
     "Termin": "10:15-13",
     "Predmet": "Veb sistemi i tehnologije",
@@ -1540,6 +1882,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-05-19",
+    "Datum do": "2023-09-15",
     "Dan": "FRIDAY",
     "Termin": "09:15-11",
     "Predmet": "Veb sistemi i tehnologije",
@@ -1549,6 +1893,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-15",
+    "Datum do": "2023-11-08",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Dizajn i razvoj veb strana",
@@ -1558,6 +1904,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-07-04",
+    "Datum do": "2023-11-28",
     "Dan": "TUESDAY",
     "Termin": "18:15-21",
     "Predmet": "Informacioni sistemi",
@@ -1567,6 +1915,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-31",
+    "Datum do": "2023-11-24",
     "Dan": "FRIDAY",
     "Termin": "14:15-16",
     "Predmet": "Engleski 3",
@@ -1576,6 +1926,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-13",
+    "Datum do": "2023-07-10",
     "Dan": "MONDAY",
     "Termin": "11:15-13",
     "Predmet": "Engleski 3",
@@ -1585,6 +1937,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-05-23",
+    "Datum do": "2023-09-26",
     "Dan": "TUESDAY",
     "Termin": "15:15-18",
     "Predmet": "Dizajn i razvoj veb strana",
@@ -1594,6 +1948,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-04-24",
+    "Datum do": "2023-09-04",
     "Dan": "MONDAY",
     "Termin": "09:15-12",
     "Predmet": "Informacioni sistemi",
@@ -1603,6 +1959,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-23",
+    "Datum do": "2023-11-23",
     "Dan": "THURSDAY",
     "Termin": "10:15-13",
     "Predmet": "Veb sistemi i tehnologije",
@@ -1612,6 +1970,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-11-22",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-17",
     "Predmet": "Veb sistemi i tehnologije",
@@ -1621,6 +1981,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-04-11",
+    "Datum do": "2023-07-18",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Engleski 3",
@@ -1630,6 +1992,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-05-22",
+    "Datum do": "2023-07-31",
     "Dan": "MONDAY",
     "Termin": "13:15-15",
     "Predmet": "Engleski 3",
@@ -1639,6 +2003,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-01-23",
+    "Datum do": "2024-01-01",
     "Dan": "MONDAY",
     "Termin": "18:15-21",
     "Predmet": "Dizajn i razvoj veb strana",
@@ -1648,6 +2014,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-05-01",
+    "Datum do": "2023-08-07",
     "Dan": "MONDAY",
     "Termin": "15:15-18",
     "Predmet": "Informacioni sistemi",
@@ -1657,6 +2025,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-08-02",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-18",
     "Predmet": "Veb sistemi i tehnologije",
@@ -1666,6 +2036,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-03-01",
+    "Datum do": "2023-10-04",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-20",
     "Predmet": "Veb sistemi i tehnologije",
@@ -1675,6 +2047,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-07-04",
+    "Datum do": "2023-10-31",
     "Dan": "TUESDAY",
     "Termin": "14:15-16",
     "Predmet": "Skript jezici",
@@ -1684,6 +2058,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-04-13",
+    "Datum do": "2023-11-30",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Testiranje softvera",
@@ -1693,6 +2069,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-31",
+    "Datum do": "2023-12-29",
     "Dan": "FRIDAY",
     "Termin": "09:15-11",
     "Predmet": "Verovatnoca i statistika",
@@ -1702,6 +2080,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-12-06",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Softverske komMONDAYente",
@@ -1711,6 +2091,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-01-17",
+    "Datum do": "2023-10-31",
     "Dan": "TUESDAY",
     "Termin": "11:15-13",
     "Predmet": "Programski prevodioci",
@@ -1720,6 +2102,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-17",
+    "Datum do": "2023-12-08",
     "Dan": "FRIDAY",
     "Termin": "11:15-13",
     "Predmet": "Skript jezici",
@@ -1729,6 +2113,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-03-30",
+    "Datum do": "2023-09-21",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Programski prevodioci",
@@ -1738,6 +2124,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-09-05",
     "Dan": "TUESDAY",
     "Termin": "09:15-11",
     "Predmet": "Softverske komMONDAYente",
@@ -1747,6 +2135,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-01-25",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Testiranje softvera",
@@ -1756,6 +2146,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-06-21",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "14:15-16",
     "Predmet": "Verovatnoca i statistika",
@@ -1765,6 +2157,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-05-17",
+    "Datum do": "2023-07-05",
     "Dan": "WEDNESDAY",
     "Termin": "14:15-16",
     "Predmet": "Skript jezici",
@@ -1774,6 +2168,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-04-13",
+    "Datum do": "2023-07-20",
     "Dan": "THURSDAY",
     "Termin": "13:15-15",
     "Predmet": "Programski prevodioci",
@@ -1783,6 +2179,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-01-30",
+    "Datum do": "2023-07-17",
     "Dan": "MONDAY",
     "Termin": "11:15-13",
     "Predmet": "Softverske komMONDAYente",
@@ -1792,6 +2190,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-01-17",
+    "Datum do": "2023-10-31",
     "Dan": "TUESDAY",
     "Termin": "09:15-11",
     "Predmet": "Testiranje softvera",
@@ -1801,6 +2201,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-20",
     "Predmet": "Verovatnoca i statistika",
@@ -1810,6 +2212,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-03-14",
+    "Datum do": "2023-12-26",
     "Dan": "TUESDAY",
     "Termin": "14:15-16",
     "Predmet": "Upravljanje informacijama",
@@ -1819,6 +2223,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-02-22",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Upravljanje informacijama",
@@ -1828,6 +2234,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-03-23",
+    "Datum do": "2023-09-07",
     "Dan": "THURSDAY",
     "Termin": "14:15-16",
     "Predmet": "Geometrijski algoritmi",
@@ -1837,6 +2245,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-02-23",
+    "Datum do": "2023-10-26",
     "Dan": "THURSDAY",
     "Termin": "16:15-18",
     "Predmet": "Geometrijski algoritmi",
@@ -1846,6 +2256,8 @@
   },
   {
     "Učionica": "Raf20 (a)",
+    "Datum od": "2023-03-24",
+    "Datum do": "2023-09-29",
     "Dan": "FRIDAY",
     "Termin": "13:15-15",
     "Predmet": "Paralelni algoritmi",
@@ -1855,6 +2267,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-23",
+    "Datum do": "2023-11-16",
     "Dan": "THURSDAY",
     "Termin": "19:15-21",
     "Predmet": "Paralelni algoritmi",
@@ -1864,6 +2278,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-06-07",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Racunarska grafika",
@@ -1873,6 +2289,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-09-20",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Racunarska grafika",
@@ -1882,6 +2300,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-20",
+    "Datum do": "2023-09-18",
     "Dan": "MONDAY",
     "Termin": "13:15-15",
     "Predmet": "Skript jezici",
@@ -1891,6 +2311,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-02-02",
+    "Datum do": "2024-01-04",
     "Dan": "THURSDAY",
     "Termin": "17:15-19",
     "Predmet": "Programski prevodioci",
@@ -1900,6 +2322,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-06-13",
+    "Datum do": "2024-01-02",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Sistemi u realnom vremenu",
@@ -1909,6 +2333,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-09",
+    "Datum do": "2023-09-04",
     "Dan": "MONDAY",
     "Termin": "16:15-18",
     "Predmet": "Sistemi u realnom vremenu",
@@ -1918,6 +2344,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-05-23",
+    "Datum do": "2023-10-03",
     "Dan": "TUESDAY",
     "Termin": "12:15-14",
     "Predmet": "Programski prevodioci",
@@ -1927,6 +2355,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-03-28",
+    "Datum do": "2023-11-28",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Verovatnoca i statistika",
@@ -1936,6 +2366,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-03-02",
+    "Datum do": "2023-12-07",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Softverske komMONDAYente",
@@ -1945,6 +2377,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-04-25",
+    "Datum do": "2024-01-02",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Programski prevodioci",
@@ -1954,6 +2388,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-01-26",
+    "Datum do": "2023-10-19",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Verovatnoca i statistika",
@@ -1963,6 +2399,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-03-09",
+    "Datum do": "2023-08-03",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Skript jezici",
@@ -1972,6 +2410,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-04-13",
+    "Datum do": "2023-08-17",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Verovatnoca i statistika",
@@ -1981,6 +2421,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-05-16",
+    "Datum do": "2023-09-19",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Softverske komMONDAYente",
@@ -1990,6 +2432,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-04-05",
+    "Datum do": "2023-09-20",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Programski prevodioci",
@@ -1999,6 +2443,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-11-01",
     "Dan": "WEDNESDAY",
     "Termin": "13:15-15",
     "Predmet": "Skript jezici",
@@ -2008,6 +2454,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-01-16",
+    "Datum do": "2023-10-16",
     "Dan": "MONDAY",
     "Termin": "17:15-19",
     "Predmet": "Povezivanje mreza",
@@ -2017,6 +2465,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-01-25",
+    "Datum do": "2023-10-04",
     "Dan": "WEDNESDAY",
     "Termin": "14:15-16",
     "Predmet": "Virtuelizovani mrezni sistemi",
@@ -2026,6 +2476,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-03-02",
+    "Datum do": "2023-12-07",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Virtuelizovani mrezni sistemi",
@@ -2035,6 +2487,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-03-27",
+    "Datum do": "2023-10-30",
     "Dan": "MONDAY",
     "Termin": "15:15-17",
     "Predmet": "Povezivanje mreza",
@@ -2044,6 +2498,8 @@
   },
   {
     "Učionica": "CET",
+    "Datum od": "2023-04-26",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Projektovanje racunarskih sistema",
@@ -2053,6 +2509,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-03-16",
+    "Datum do": "2023-11-23",
     "Dan": "THURSDAY",
     "Termin": "14:15-16",
     "Predmet": "Primenjena vestacka inteligencija",
@@ -2062,6 +2520,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-22",
+    "Datum do": "2023-12-27",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Verovatnoca i statistika",
@@ -2071,6 +2531,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-05-23",
+    "Datum do": "2023-11-21",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Primenjena vestacka inteligencija",
@@ -2080,6 +2542,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-07-19",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Skript jezici",
@@ -2089,6 +2553,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-01-12",
+    "Datum do": "2023-07-13",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Verovatnoca i statistika",
@@ -2098,6 +2564,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-03-20",
+    "Datum do": "2023-07-17",
     "Dan": "MONDAY",
     "Termin": "19:15-21",
     "Predmet": "Povezivanje mreza",
@@ -2107,6 +2575,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-02-14",
+    "Datum do": "2023-12-12",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Primenjena vestacka inteligencija",
@@ -2116,6 +2586,8 @@
   },
   {
     "Učionica": "CET",
+    "Datum od": "2023-04-19",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Projektovanje racunarskih sistema",
@@ -2125,6 +2597,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-27",
+    "Datum do": "2023-11-06",
     "Dan": "MONDAY",
     "Termin": "18:15-20",
     "Predmet": "Sistemsko programiranje",
@@ -2134,6 +2608,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-01-18",
+    "Datum do": "2023-10-18",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-20",
     "Predmet": "Sistemsko programiranje",
@@ -2143,6 +2619,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-05-30",
+    "Datum do": "2023-10-10",
     "Dan": "TUESDAY",
     "Termin": "09:15-12",
     "Predmet": "Multimedijalni projekti 1",
@@ -2152,6 +2630,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-05-11",
+    "Datum do": "2023-08-17",
     "Dan": "THURSDAY",
     "Termin": "16:15-19",
     "Predmet": "Multimedijalni projekti 1",
@@ -2161,6 +2641,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-02-16",
+    "Datum do": "2023-07-13",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Osnovi animacije",
@@ -2170,6 +2652,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-05-10",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Dizajn i informacione tehnologije 1",
@@ -2179,6 +2663,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-03-09",
+    "Datum do": "2023-11-23",
     "Dan": "THURSDAY",
     "Termin": "13:15-14",
     "Predmet": "Dizajn i informacione tehnologije 1",
@@ -2188,6 +2674,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-03-10",
+    "Datum do": "2023-12-15",
     "Dan": "FRIDAY",
     "Termin": "12:15-15",
     "Predmet": "Graficki projekti",
@@ -2197,6 +2685,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-06-13",
+    "Datum do": "2023-08-15",
     "Dan": "TUESDAY",
     "Termin": "15:15-18",
     "Predmet": "Graficki projekti",
@@ -2206,6 +2696,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-05-11",
+    "Datum do": "2023-07-13",
     "Dan": "THURSDAY",
     "Termin": "14:15-16",
     "Predmet": "Osnovi animacije",
@@ -2215,6 +2707,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-06-27",
+    "Datum do": "2023-08-01",
     "Dan": "TUESDAY",
     "Termin": "12:15-15",
     "Predmet": "Multimedijalni projekti 1",
@@ -2224,6 +2718,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-01-17",
+    "Datum do": "2023-12-05",
     "Dan": "TUESDAY",
     "Termin": "18:15-21",
     "Predmet": "Multimedijalni projekti 1",
@@ -2233,6 +2729,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-03-03",
+    "Datum do": "2024-01-05",
     "Dan": "FRIDAY",
     "Termin": "18:15-20",
     "Predmet": "Osnovi animacije",
@@ -2242,6 +2740,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-27",
+    "Datum do": "2023-08-21",
     "Dan": "MONDAY",
     "Termin": "15:15-16",
     "Predmet": "IT servis menadzment",
@@ -2251,6 +2751,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-04-27",
+    "Datum do": "2023-08-24",
     "Dan": "THURSDAY",
     "Termin": "14:15-16",
     "Predmet": "Konfiguracija i odrzavanje IP mreza",
@@ -2260,6 +2762,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-23",
+    "Datum do": "2023-08-14",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Konfiguracija i odrzavanje IP mreza",
@@ -2269,6 +2773,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-06-01",
+    "Datum do": "2023-09-21",
     "Dan": "THURSDAY",
     "Termin": "16:15-18",
     "Predmet": "Uvod u administraciju IP mreza",
@@ -2278,6 +2784,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-04-11",
+    "Datum do": "2023-10-31",
     "Dan": "TUESDAY",
     "Termin": "12:15-14",
     "Predmet": "Uvod u administraciju IP mreza",
@@ -2287,6 +2795,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-07-03",
+    "Datum do": "2023-07-10",
     "Dan": "MONDAY",
     "Termin": "12:15-15",
     "Predmet": "Uvod u softversko inzenjerstvo",
@@ -2296,6 +2806,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-04-10",
+    "Datum do": "2023-11-20",
     "Dan": "MONDAY",
     "Termin": "16:15-18",
     "Predmet": "IT servis menadzment",
@@ -2305,6 +2817,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-02-14",
+    "Datum do": "2023-11-28",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Uvod u softversko inzenjerstvo",
@@ -2314,6 +2828,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-06-12",
+    "Datum do": "2023-10-09",
     "Dan": "MONDAY",
     "Termin": "14:15-15",
     "Predmet": "IT servis menadzment",
@@ -2323,6 +2839,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-05-10",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-18",
     "Predmet": "Uvod u softversko inzenjerstvo",
@@ -2332,6 +2850,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-02-14",
+    "Datum do": "2023-08-29",
     "Dan": "TUESDAY",
     "Termin": "09:15-12",
     "Predmet": "C# programiranje",
@@ -2341,6 +2861,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-06-06",
+    "Datum do": "2023-11-14",
     "Dan": "TUESDAY",
     "Termin": "12:15-15",
     "Predmet": "C# programiranje",
@@ -2350,6 +2872,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-02",
+    "Datum do": "2023-10-05",
     "Dan": "THURSDAY",
     "Termin": "18:15-21",
     "Predmet": "SQL programiranje",
@@ -2359,6 +2883,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-06-29",
+    "Datum do": "2023-07-13",
     "Dan": "THURSDAY",
     "Termin": "15:15-18",
     "Predmet": "SQL programiranje",
@@ -2368,6 +2894,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-17",
     "Predmet": "Skladista podataka",
@@ -2377,6 +2905,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-06-12",
+    "Datum do": "2023-10-02",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Skladista podataka",
@@ -2386,6 +2916,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-04-27",
+    "Datum do": "2023-11-23",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Veliki podaci",
@@ -2395,6 +2927,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-01-11",
+    "Datum do": "2023-09-27",
     "Dan": "WEDNESDAY",
     "Termin": "11:15-13",
     "Predmet": "Kombinatorika i teorija grafova",
@@ -2404,6 +2938,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-07",
+    "Datum do": "2023-07-11",
     "Dan": "TUESDAY",
     "Termin": "15:15-17",
     "Predmet": "Kombinatorika i teorija grafova",
@@ -2413,6 +2949,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-03-06",
+    "Datum do": "2023-07-17",
     "Dan": "MONDAY",
     "Termin": "13:15-15",
     "Predmet": "Napredno veb programiranje",
@@ -2422,6 +2960,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-06-27",
+    "Datum do": "2023-07-18",
     "Dan": "TUESDAY",
     "Termin": "13:15-15",
     "Predmet": "Upravljanje projektima",
@@ -2431,6 +2971,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-01-23",
+    "Datum do": "2023-11-13",
     "Dan": "MONDAY",
     "Termin": "11:15-13",
     "Predmet": "Veliki podaci",
@@ -2440,6 +2982,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-30",
+    "Datum do": "2023-11-30",
     "Dan": "THURSDAY",
     "Termin": "17:15-19",
     "Predmet": "Upravljanje projektima",
@@ -2449,6 +2993,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-02-16",
+    "Datum do": "2023-07-06",
     "Dan": "THURSDAY",
     "Termin": "13:15-15",
     "Predmet": "Napredno veb programiranje",
@@ -2458,6 +3004,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-03-08",
+    "Datum do": "2023-11-29",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Multimedijalni informacioni sistemi",
@@ -2467,6 +3015,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-06-08",
+    "Datum do": "2023-08-03",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Multimedijalni informacioni sistemi",
@@ -2476,6 +3026,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-03-23",
+    "Datum do": "2023-11-09",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Upravljanje projektima",
@@ -2485,6 +3037,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-05-18",
+    "Datum do": "2023-12-07",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Veliki podaci",
@@ -2494,6 +3048,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-04-14",
+    "Datum do": "2023-09-15",
     "Dan": "FRIDAY",
     "Termin": "17:15-19",
     "Predmet": "Napredno veb programiranje",
@@ -2503,6 +3059,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-04-20",
+    "Datum do": "2023-08-24",
     "Dan": "THURSDAY",
     "Termin": "11:15-13",
     "Predmet": "Multimedijalni informacioni sistemi",
@@ -2512,6 +3070,8 @@
   },
   {
     "Učionica": "Raf03 (u)",
+    "Datum od": "2023-02-27",
+    "Datum do": "2023-10-16",
     "Dan": "MONDAY",
     "Termin": "17:15-19",
     "Predmet": "Upravljanje projektima",
@@ -2521,6 +3081,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-04-21",
+    "Datum do": "2023-12-15",
     "Dan": "FRIDAY",
     "Termin": "19:15-21",
     "Predmet": "Napredno veb programiranje",
@@ -2530,6 +3092,8 @@
   },
   {
     "Učionica": "Raf02 (u)",
+    "Datum od": "2023-04-21",
+    "Datum do": "2023-11-24",
     "Dan": "FRIDAY",
     "Termin": "16:15-18",
     "Predmet": "Veliki podaci",
@@ -2539,6 +3103,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-03-31",
+    "Datum do": "2023-08-25",
     "Dan": "FRIDAY",
     "Termin": "15:15-17",
     "Predmet": "Kvantno racunarstvo",
@@ -2548,6 +3114,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-01-05",
+    "Datum do": "2023-12-14",
     "Dan": "THURSDAY",
     "Termin": "17:15-19",
     "Predmet": "Kvantno racunarstvo",
@@ -2557,6 +3125,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-10",
+    "Datum do": "2023-09-01",
     "Dan": "FRIDAY",
     "Termin": "17:15-19",
     "Predmet": "Prepoznavanje govora",
@@ -2566,6 +3136,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-06-28",
+    "Datum do": "2023-10-25",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-11",
     "Predmet": "Prepoznavanje govora",
@@ -2575,6 +3147,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-03-09",
+    "Datum do": "2023-10-05",
     "Dan": "THURSDAY",
     "Termin": "15:15-17",
     "Predmet": "Upravljanje projektima",
@@ -2584,6 +3158,8 @@
   },
   {
     "Učionica": "Raf21 (a)",
+    "Datum od": "2023-04-06",
+    "Datum do": "2023-09-07",
     "Dan": "THURSDAY",
     "Termin": "09:15-11",
     "Predmet": "Duboko ucenje",
@@ -2593,6 +3169,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-06-12",
+    "Datum do": "2023-07-17",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Duboko ucenje",
@@ -2602,6 +3180,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-03-10",
+    "Datum do": "2023-08-25",
     "Dan": "FRIDAY",
     "Termin": "13:15-15",
     "Predmet": "Upravljanje projektima",
@@ -2611,6 +3191,8 @@
   },
   {
     "Učionica": "Raf04 (u)",
+    "Datum od": "2023-06-02",
+    "Datum do": "2023-11-03",
     "Dan": "FRIDAY",
     "Termin": "12:15-14",
     "Predmet": "Modelovanje i simulacija",
@@ -2620,6 +3202,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-04-07",
+    "Datum do": "2023-07-07",
     "Dan": "FRIDAY",
     "Termin": "14:15-16",
     "Predmet": "Modelovanje i simulacija",
@@ -2629,6 +3213,8 @@
   },
   {
     "Učionica": "CET",
+    "Datum od": "2023-01-27",
+    "Datum do": "2023-12-29",
     "Dan": "FRIDAY",
     "Termin": "09:15-11",
     "Predmet": "Racunarske mreze velikih sistema",
@@ -2638,6 +3224,8 @@
   },
   {
     "Učionica": "CET",
+    "Datum od": "2023-05-12",
+    "Datum do": "2023-07-21",
     "Dan": "FRIDAY",
     "Termin": "11:15-13",
     "Predmet": "Racunarske mreze velikih sistema",
@@ -2647,6 +3235,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-02-01",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Uvod u robotiku",
@@ -2656,6 +3246,8 @@
   },
   {
     "Učionica": "Rg07 (u)",
+    "Datum od": "2023-06-01",
+    "Datum do": "2023-08-03",
     "Dan": "THURSDAY",
     "Termin": "17:15-19",
     "Predmet": "Uvod u robotiku",
@@ -2665,6 +3257,8 @@
   },
   {
     "Učionica": "Raf05 (u)",
+    "Datum od": "2023-04-24",
+    "Datum do": "2023-12-25",
     "Dan": "MONDAY",
     "Termin": "15:15-17",
     "Predmet": "Upravljanje projektima",
@@ -2674,6 +3268,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-21",
+    "Datum do": "2023-11-28",
     "Dan": "TUESDAY",
     "Termin": "18:15-20",
     "Predmet": "Data centar infrastruktura",
@@ -2683,6 +3279,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-06-27",
+    "Datum do": "2023-07-11",
     "Dan": "TUESDAY",
     "Termin": "16:15-18",
     "Predmet": "Data centar infrastruktura",
@@ -2692,6 +3290,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-04-26",
+    "Datum do": "2023-07-05",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-21",
     "Predmet": "Bezicne i mobilne komunikacije",
@@ -2701,6 +3301,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-15",
+    "Datum do": "2023-09-20",
     "Dan": "WEDNESDAY",
     "Termin": "14:15-16",
     "Predmet": "Mikroservisne aplikacije",
@@ -2710,6 +3312,8 @@
   },
   {
     "Učionica": "Raf01 (u)",
+    "Datum od": "2023-03-29",
+    "Datum do": "2023-12-27",
     "Dan": "WEDNESDAY",
     "Termin": "16:15-18",
     "Predmet": "Mikroservisne aplikacije",
@@ -2719,6 +3323,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-06-08",
+    "Datum do": "2023-07-27",
     "Dan": "THURSDAY",
     "Termin": "19:15-21",
     "Predmet": "Bezicne i mobilne komunikacije",
@@ -2728,6 +3334,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-05-25",
+    "Datum do": "2023-11-09",
     "Dan": "THURSDAY",
     "Termin": "14:15-17",
     "Predmet": "Animirana grafika",
@@ -2737,6 +3345,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-04-28",
+    "Datum do": "2023-08-18",
     "Dan": "FRIDAY",
     "Termin": "13:15-16",
     "Predmet": "Animirana grafika",
@@ -2746,6 +3356,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-06-19",
+    "Datum do": "2023-12-18",
     "Dan": "MONDAY",
     "Termin": "11:15-14",
     "Predmet": "Digitalna slika",
@@ -2755,6 +3367,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-02-22",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-21",
     "Predmet": "Digitalna slika",
@@ -2764,6 +3378,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-06-09",
+    "Datum do": "2023-07-14",
     "Dan": "FRIDAY",
     "Termin": "10:15-12",
     "Predmet": "Uvod u 3D animaciju",
@@ -2773,6 +3389,8 @@
   },
   {
     "Učionica": "Raf16 (MD)",
+    "Datum od": "2023-02-27",
+    "Datum do": "2023-07-24",
     "Dan": "MONDAY",
     "Termin": "09:15-11",
     "Predmet": "Uvod u 3D animaciju",
@@ -2782,6 +3400,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-05-25",
+    "Datum do": "2023-10-26",
     "Dan": "THURSDAY",
     "Termin": "18:15-21",
     "Predmet": "Poetika digitalne umetnosti",
@@ -2791,6 +3411,8 @@
   },
   {
     "Učionica": "Raf15 (MD)",
+    "Datum od": "2023-07-05",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-18",
     "Predmet": "Poetika digitalne umetnosti",
@@ -2800,6 +3422,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-06-01",
+    "Datum do": "2023-12-14",
     "Dan": "THURSDAY",
     "Termin": "14:15-17",
     "Predmet": "Poetika fotografske umetnosti",
@@ -2809,6 +3433,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-02-06",
+    "Datum do": "2023-11-13",
     "Dan": "MONDAY",
     "Termin": "17:15-20",
     "Predmet": "Postprodukcija",
@@ -2818,6 +3444,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-02-22",
+    "Datum do": "2023-10-04",
     "Dan": "WEDNESDAY",
     "Termin": "15:15-18",
     "Predmet": "Postprodukcija",
@@ -2827,6 +3455,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-05-26",
+    "Datum do": "2023-10-13",
     "Dan": "FRIDAY",
     "Termin": "15:15-18",
     "Predmet": "Animirana grafika",
@@ -2836,6 +3466,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-06-02",
+    "Datum do": "2023-07-07",
     "Dan": "FRIDAY",
     "Termin": "18:15-21",
     "Predmet": "Animirana grafika",
@@ -2845,6 +3477,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-06-07",
+    "Datum do": "2023-07-12",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-20",
     "Predmet": "Uvod u 3D animaciju",
@@ -2854,6 +3488,8 @@
   },
   {
     "Učionica": "Raf14 (MD)",
+    "Datum od": "2023-03-07",
+    "Datum do": "2023-11-28",
     "Dan": "TUESDAY",
     "Termin": "09:15-11",
     "Predmet": "Uvod u 3D animaciju",
@@ -2863,6 +3499,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-05-02",
+    "Datum do": "2023-10-10",
     "Dan": "TUESDAY",
     "Termin": "12:15-15",
     "Predmet": "Poetika fotografske umetnosti",
@@ -2872,6 +3510,8 @@
   },
   {
     "Učionica": "Raf13 (MD)",
+    "Datum od": "2023-07-05",
+    "Datum do": "2023-11-22",
     "Dan": "WEDNESDAY",
     "Termin": "12:15-15",
     "Predmet": "Poetika fotografske umetnosti",
@@ -2881,6 +3521,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-05-08",
+    "Datum do": "2023-07-31",
     "Dan": "MONDAY",
     "Termin": "18:15-21",
     "Predmet": "MFC",
@@ -2890,6 +3532,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-04-18",
+    "Datum do": "2023-10-03",
     "Dan": "TUESDAY",
     "Termin": "18:15-21",
     "Predmet": "MFC",
@@ -2899,6 +3543,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-09-20",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-21",
     "Predmet": "MFC",
@@ -2908,6 +3554,8 @@
   },
   {
     "Učionica": "Raf07 (u)",
+    "Datum od": "2023-01-27",
+    "Datum do": "2023-08-25",
     "Dan": "FRIDAY",
     "Termin": "18:15-21",
     "Predmet": "MFC",
@@ -2917,6 +3565,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-04-11",
+    "Datum do": "2023-11-07",
     "Dan": "TUESDAY",
     "Termin": "17:15-19",
     "Predmet": "Kombinatorika i teorija grafova",
@@ -2926,6 +3576,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-06-01",
+    "Datum do": "2023-08-17",
     "Dan": "THURSDAY",
     "Termin": "18:15-20",
     "Predmet": "Kombinatorika i teorija grafova",
@@ -2935,6 +3587,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-05-08",
+    "Datum do": "2023-08-21",
     "Dan": "MONDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 01",
@@ -2944,6 +3598,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-10-31",
     "Dan": "TUESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 01",
@@ -2953,6 +3609,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 01",
@@ -2962,6 +3620,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-06-15",
+    "Datum do": "2023-12-21",
     "Dan": "THURSDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 01",
@@ -2971,6 +3631,8 @@
   },
   {
     "Učionica": "Rg01 (u)",
+    "Datum od": "2023-03-10",
+    "Datum do": "2023-07-14",
     "Dan": "FRIDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 01",
@@ -2980,6 +3642,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-05-29",
+    "Datum do": "2023-11-13",
     "Dan": "MONDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG02",
@@ -2989,6 +3653,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-10-10",
     "Dan": "TUESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG02",
@@ -2998,6 +3664,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-05-03",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG02",
@@ -3007,6 +3675,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-02-02",
+    "Datum do": "2023-11-30",
     "Dan": "THURSDAY",
     "Termin": "09:15-15",
     "Predmet": "ZZ RG02",
@@ -3016,6 +3686,8 @@
   },
   {
     "Učionica": "Rg02 (u)",
+    "Datum od": "2023-04-14",
+    "Datum do": "2023-10-27",
     "Dan": "FRIDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG02",
@@ -3025,6 +3697,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-01-30",
+    "Datum do": "2023-10-30",
     "Dan": "MONDAY",
     "Termin": "09:15-13",
     "Predmet": "ZZ RG 06",
@@ -3034,6 +3708,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-04-25",
+    "Datum do": "2023-07-04",
     "Dan": "TUESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 06",
@@ -3043,6 +3719,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-06-28",
+    "Datum do": "2023-11-08",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 06",
@@ -3052,6 +3730,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-02-16",
+    "Datum do": "2023-11-02",
     "Dan": "THURSDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 06",
@@ -3061,6 +3741,8 @@
   },
   {
     "Učionica": "Rg06 (u)",
+    "Datum od": "2023-06-30",
+    "Datum do": "2023-12-01",
     "Dan": "FRIDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 06",
@@ -3070,6 +3752,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-06-05",
+    "Datum do": "2023-07-17",
     "Dan": "MONDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RAF 6",
@@ -3079,6 +3763,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-08-08",
     "Dan": "TUESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ RAF 6",
@@ -3088,6 +3774,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-01-18",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RAF 6",
@@ -3097,6 +3785,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-02-02",
+    "Datum do": "2023-11-02",
     "Dan": "THURSDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ RAF 6",
@@ -3106,6 +3796,8 @@
   },
   {
     "Učionica": "Raf06 (a)",
+    "Datum od": "2023-03-10",
+    "Datum do": "2023-09-08",
     "Dan": "FRIDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RAF 6",
@@ -3115,6 +3807,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-06-26",
+    "Datum do": "2023-09-04",
     "Dan": "MONDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K1",
@@ -3124,6 +3818,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-05-08",
+    "Datum do": "2023-08-07",
     "Dan": "MONDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K1",
@@ -3133,6 +3829,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-01-17",
+    "Datum do": "2023-12-12",
     "Dan": "TUESDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K1",
@@ -3142,6 +3840,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-05-16",
+    "Datum do": "2023-12-05",
     "Dan": "TUESDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K1",
@@ -3151,6 +3851,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-03-01",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K1",
@@ -3160,6 +3862,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-03-01",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K1",
@@ -3169,6 +3873,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-01-12",
+    "Datum do": "2023-07-27",
     "Dan": "THURSDAY",
     "Termin": "18:15-21",
     "Predmet": "ZZ K1",
@@ -3178,6 +3884,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-04-21",
+    "Datum do": "2023-12-29",
     "Dan": "FRIDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K1",
@@ -3187,6 +3895,8 @@
   },
   {
     "Učionica": "Kolarac1",
+    "Datum od": "2023-03-17",
+    "Datum do": "2023-09-01",
     "Dan": "FRIDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K1",
@@ -3196,6 +3906,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-01-09",
+    "Datum do": "2023-10-30",
     "Dan": "MONDAY",
     "Termin": "18:15-21",
     "Predmet": "ZZ K2",
@@ -3205,6 +3917,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-01-03",
+    "Datum do": "2023-09-19",
     "Dan": "TUESDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K2",
@@ -3214,6 +3928,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-01-31",
+    "Datum do": "2023-10-03",
     "Dan": "TUESDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K2",
@@ -3223,6 +3939,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-05-03",
+    "Datum do": "2023-12-27",
     "Dan": "WEDNESDAY",
     "Termin": "18:15-21",
     "Predmet": "ZZ K2",
@@ -3232,6 +3950,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-04-06",
+    "Datum do": "2023-07-27",
     "Dan": "THURSDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K2",
@@ -3241,6 +3961,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-03-30",
+    "Datum do": "2023-10-12",
     "Dan": "THURSDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K2",
@@ -3250,6 +3972,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-02-10",
+    "Datum do": "2023-07-07",
     "Dan": "FRIDAY",
     "Termin": "09:15-19",
     "Predmet": "ZZ K2",
@@ -3259,6 +3983,8 @@
   },
   {
     "Učionica": "Kolarac2",
+    "Datum od": "2023-06-23",
+    "Datum do": "2023-09-29",
     "Dan": "FRIDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K2",
@@ -3268,6 +3994,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-01-09",
+    "Datum do": "2023-12-04",
     "Dan": "MONDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K3",
@@ -3277,6 +4005,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-03-28",
+    "Datum do": "2023-09-26",
     "Dan": "TUESDAY",
     "Termin": "20:15-21",
     "Predmet": "ZZ K3",
@@ -3286,6 +4016,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-05-24",
+    "Datum do": "2023-08-16",
     "Dan": "WEDNESDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K3",
@@ -3295,6 +4027,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-04-27",
+    "Datum do": "2023-10-12",
     "Dan": "THURSDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K3",
@@ -3304,6 +4038,8 @@
   },
   {
     "Učionica": "Kolarac3",
+    "Datum od": "2023-02-03",
+    "Datum do": "2023-08-04",
     "Dan": "FRIDAY",
     "Termin": "19:15-21",
     "Predmet": "ZZ K3",
@@ -3313,6 +4049,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-05-08",
+    "Datum do": "2023-09-18",
     "Dan": "MONDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 11",
@@ -3322,6 +4060,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-02-28",
+    "Datum do": "2023-10-03",
     "Dan": "TUESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 11",
@@ -3331,6 +4071,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-05-24",
+    "Datum do": "2023-08-23",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 11",
@@ -3340,6 +4082,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-02-23",
+    "Datum do": "2024-01-04",
     "Dan": "THURSDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 11",
@@ -3349,6 +4093,8 @@
   },
   {
     "Učionica": "Raf11 (a)",
+    "Datum od": "2023-04-28",
+    "Datum do": "2023-09-29",
     "Dan": "FRIDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 11",
@@ -3358,6 +4104,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-01-02",
+    "Datum do": "2023-07-10",
     "Dan": "MONDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 10",
@@ -3367,6 +4115,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-06-20",
+    "Datum do": "2023-11-14",
     "Dan": "TUESDAY",
     "Termin": "09:15-13",
     "Predmet": "ZZ Raf 10",
@@ -3376,6 +4126,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-15",
+    "Datum do": "2023-07-26",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 10",
@@ -3385,6 +4137,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-03-23",
+    "Datum do": "2023-08-03",
     "Dan": "THURSDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 10",
@@ -3394,6 +4148,8 @@
   },
   {
     "Učionica": "Raf10 (a)",
+    "Datum od": "2023-06-16",
+    "Datum do": "2023-10-20",
     "Dan": "FRIDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 10",
@@ -3403,6 +4159,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-06-19",
+    "Datum do": "2023-10-09",
     "Dan": "MONDAY",
     "Termin": "09:15-15",
     "Predmet": "ZZ Raf 08",
@@ -3412,6 +4170,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-01-17",
+    "Datum do": "2023-12-19",
     "Dan": "TUESDAY",
     "Termin": "09:15-13",
     "Predmet": "ZZ Raf 08",
@@ -3421,6 +4181,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-10-11",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-15",
     "Predmet": "ZZ Raf 08",
@@ -3430,6 +4192,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-05-18",
+    "Datum do": "2023-07-27",
     "Dan": "THURSDAY",
     "Termin": "09:15-15",
     "Predmet": "ZZ Raf 08",
@@ -3439,6 +4203,8 @@
   },
   {
     "Učionica": "Raf08 (a)",
+    "Datum od": "2023-04-07",
+    "Datum do": "2023-12-29",
     "Dan": "FRIDAY",
     "Termin": "09:15-15",
     "Predmet": "ZZ Raf 08",
@@ -3448,6 +4214,8 @@
   },
   {
     "Učionica": "Raf19 (a)",
+    "Datum od": "2023-03-13",
+    "Datum do": "2023-07-17",
     "Dan": "MONDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 19",
@@ -3457,6 +4225,8 @@
   },
   {
     "Učionica": "Raf19 (a)",
+    "Datum od": "2023-03-07",
+    "Datum do": "2024-01-02",
     "Dan": "TUESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 19",
@@ -3466,6 +4236,8 @@
   },
   {
     "Učionica": "Raf19 (a)",
+    "Datum od": "2023-03-15",
+    "Datum do": "2023-10-25",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 19",
@@ -3475,6 +4247,8 @@
   },
   {
     "Učionica": "Raf19 (a)",
+    "Datum od": "2023-01-19",
+    "Datum do": "2023-11-23",
     "Dan": "THURSDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 19",
@@ -3484,6 +4258,8 @@
   },
   {
     "Učionica": "Raf19 (a)",
+    "Datum od": "2023-04-14",
+    "Datum do": "2023-09-01",
     "Dan": "FRIDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 19",
@@ -3493,6 +4269,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-02-27",
+    "Datum do": "2023-12-11",
     "Dan": "MONDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 4",
@@ -3502,6 +4280,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-02-21",
+    "Datum do": "2023-12-19",
     "Dan": "TUESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 4",
@@ -3511,6 +4291,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-01-04",
+    "Datum do": "2023-11-01",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 4",
@@ -3520,6 +4302,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-05-25",
+    "Datum do": "2023-12-21",
     "Dan": "THURSDAY",
     "Termin": "09:15-15",
     "Predmet": "ZZ RG 4",
@@ -3529,6 +4313,8 @@
   },
   {
     "Učionica": "Rg04 (u)",
+    "Datum od": "2023-01-27",
+    "Datum do": "2023-10-20",
     "Dan": "FRIDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ RG 4",
@@ -3538,6 +4324,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-03-13",
+    "Datum do": "2024-01-01",
     "Dan": "MONDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ Raf 9",
@@ -3547,6 +4335,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-04-25",
+    "Datum do": "2023-08-08",
     "Dan": "TUESDAY",
     "Termin": "8:15-14",
     "Predmet": "ZZ Raf 9",
@@ -3556,6 +4346,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-03-08",
+    "Datum do": "2023-07-12",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 9",
@@ -3565,6 +4357,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-06-15",
+    "Datum do": "2023-08-17",
     "Dan": "THURSDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 9",
@@ -3574,6 +4368,8 @@
   },
   {
     "Učionica": "Raf09 (a)",
+    "Datum od": "2023-05-19",
+    "Datum do": "2023-12-15",
     "Dan": "FRIDAY",
     "Termin": "09:15-16",
     "Predmet": "ZZ Raf 9",
@@ -3583,6 +4379,8 @@
   },
   {
     "Učionica": "Raf18 (a)",
+    "Datum od": "2023-01-30",
+    "Datum do": "2023-08-28",
     "Dan": "MONDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 18",
@@ -3592,6 +4390,8 @@
   },
   {
     "Učionica": "Raf18 (a)",
+    "Datum od": "2023-01-10",
+    "Datum do": "2023-08-01",
     "Dan": "TUESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 18",
@@ -3601,6 +4401,8 @@
   },
   {
     "Učionica": "Raf18 (a)",
+    "Datum od": "2023-05-17",
+    "Datum do": "2023-08-09",
     "Dan": "WEDNESDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 18",
@@ -3610,6 +4412,8 @@
   },
   {
     "Učionica": "Raf18 (a)",
+    "Datum od": "2023-04-13",
+    "Datum do": "2024-01-04",
     "Dan": "THURSDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 18",
@@ -3619,6 +4423,8 @@
   },
   {
     "Učionica": "Raf18 (a)",
+    "Datum od": "2023-03-24",
+    "Datum do": "2023-08-18",
     "Dan": "FRIDAY",
     "Termin": "09:15-14",
     "Predmet": "ZZ Raf 18",

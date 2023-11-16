@@ -8,12 +8,15 @@ import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
 import scheduleManager.Event;
 import scheduleManager.Room;
+import scheduleManager.Schedule;
 import scheduleManager.ScheduleManager;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Time;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ScheduleManagerImp extends ScheduleManager {
@@ -21,14 +24,13 @@ public class ScheduleManagerImp extends ScheduleManager {
     protected void loadScheduleFromJSONFile() {
         schedule = initializeSchedule();
         Scanner scanner = new Scanner(System.in);
-        getDatesAndExceptedDays();
+        //getDatesAndExceptedDays();
         Event event = null;
-
-        System.out.println("Unesite putanju do JSON fajla:");
         String jsonFile = scanner.nextLine();
         Map<String, String> additionalData = new HashMap<>();
 
         try {
+            //Učionica;Datum od;Datum do;Dan;Termin;Predmet;Tip;Nastavnik;Grupe
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode rootNode = objectMapper.readTree(new File(jsonFile));
             ArrayNode eventsArray = (ArrayNode) rootNode;
@@ -44,13 +46,22 @@ public class ScheduleManagerImp extends ScheduleManager {
 
 
                 String ucionica = eventNode.get(fieldsNames.get(0)).asText();
-                String dan = eventNode.get(fieldsNames.get(1)).asText();
-                String termin = eventNode.get(fieldsNames.get(2)).asText();
+                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                Date dateOd;
+                Date dateTo;
+                try {
+                    dateOd = format.parse(eventNode.get(fieldsNames.get(1)).asText());
+                    dateTo = format.parse(eventNode.get(fieldsNames.get(2)).asText());
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
+                String dan = eventNode.get(fieldsNames.get(3)).asText();
+                String termin = eventNode.get(fieldsNames.get(4)).asText();
 
-                for (int i = 3; i < fieldsNames.size(); i++) {
+                for (int i = 4; i < fieldsNames.size(); i++) {
                     additionalData.put(fieldsNames.get(i), eventNode.get(fieldsNames.get(i)).asText());
                 }
-                event = createEventFromFile(null, ucionica, dan, termin, additionalData);
+                event = createEventFromFile(dateOd, dateTo, ucionica, dan, termin, additionalData);
                 schedule.getSchedule().add(event);
 
             }
@@ -64,7 +75,6 @@ public class ScheduleManagerImp extends ScheduleManager {
         schedule = initializeSchedule();
         Scanner scanner = new Scanner(System.in);
         //getDatesAndExceptedDays();
-        System.out.println("Unesite putanju do fajla:");
         String csvFile = scanner.nextLine();
 
         List<Event> events = new ArrayList<>();
@@ -86,9 +96,18 @@ public class ScheduleManagerImp extends ScheduleManager {
                     csv = true;
                     continue;
                 }
-
+                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                Date dateOd;
+                Date dateTo;
                 String ucionica = parts[0];
-                String dan = parts[1];
+                try {
+                    dateOd = format.parse(parts[1]);
+                    dateTo = format.parse(parts[2]);
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
+
+                String dan = parts[3];
 
                 StringBuilder result = new StringBuilder();
 
@@ -100,13 +119,13 @@ public class ScheduleManagerImp extends ScheduleManager {
                 dan = result.toString();
                 dan = dan.trim();
 
-                String termin = parts[2];
-                for (int i = 3; i < parts.length; i++) {
+                String termin = parts[4];
+                for (int i = 4; i < parts.length; i++) {
 
                     additionalData.put(head[i], parts[i]);
                 }
 
-                event = createEventFromFile(null, ucionica, dan, termin, additionalData);
+                event = createEventFromFile(dateOd, dateTo, ucionica, dan, termin, additionalData);
                 schedule.getSchedule().add(event);
 
             }
