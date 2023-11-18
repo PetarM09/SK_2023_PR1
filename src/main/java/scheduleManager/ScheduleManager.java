@@ -512,29 +512,41 @@ public abstract class ScheduleManager {
     }
 
    // Pretrazivanje termina po additionalData podacima
-    public List searchAdditionalData(String input){
-        //Ocekuje se format Key:Value
-
-        String[] parts = input.split(":");
+    public List<Event> searchAdditionalData(String input) {
         List<Event> found = new ArrayList<>();
-
-        //mapa svih eventova
         List<Event> events = schedule.getSchedule();
 
+        String[] filterPairs = input.split(",");
+        Map<String, String> filters = new HashMap<>();
+
+        // Razdvajanje i dodavanje filtera u mapu
+        for (String pair : filterPairs) {
+            String[] parts = pair.trim().split(":");
+            if (parts.length == 2) {
+                filters.put(parts[0], parts[1]);
+            }
+        }
 
         for (Event event : events) {
-            //Additional data za event
             Map<String, String> data = event.getAdditionalData();
+            boolean matchesAllFilters = true;
 
-            //Sadrzi onaj additional data po kom se pretrazuje
-            if (data.containsKey(parts[0])) {
-                if(data.get(parts[0]).equals(parts[1])) {
-                    found.add(event);
-                    System.out.println(event);
+            for (Map.Entry<String, String> filter : filters.entrySet()) {
+                String key = filter.getKey();
+                String value = filter.getValue();
+
+                if (data.containsKey(key) && !data.get(key).equals(value)) {
+                    matchesAllFilters = false;
+                    break;
                 }
             }
 
+            if (matchesAllFilters) {
+                found.add(event);
+                System.out.println(event);
+            }
         }
+
         return found;
     }
 
@@ -553,46 +565,48 @@ public abstract class ScheduleManager {
     }
 
     //Pretrazivanje slobodnih termina
-    public Map<DayOfWeek, List<Triple<Date, Pair<Time,Time>, String>>> findAvailableTime(){
-        //DATUM, vremeOD, vremeDO, UCIONICA
-        //DATU, vremeOD, vremeDO, UCIONICA
+    public Map<Pair<String, String>, List<String>> findAvailableTime() {
+        Map<Pair<String, String>, List<String>> availableTimes = new HashMap<>();
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("E MMM dd yyyy");
 
-        //Datum, ucionica
-        //Termin1-termin2, termin3-termin4, termin5-termin6
-
-        Triple<Date, Pair<Time,Time>, String> oblik;
-
-        Map<DayOfWeek, List<Triple<Date, Pair<Time,Time>, String>>> gapsByDay = new HashMap<>();
-
-        for (DayOfWeek day : DayOfWeek.values()){
+        for (DayOfWeek day : DayOfWeek.values()) {
             List<Event> eventsForDay = schedule.getEventsByDay(day);
+            Map<String, List<Event>> eventsPerRoom = sortEventsByRoom(eventsForDay);
 
-            Map<String,List<Event>> eventsPerRoom = sortEventsByRoom(eventsForDay);
-
-            for (String soba : eventsPerRoom.keySet()){
-                List<Triple<Date, Pair<Time,Time>, String>> gaps = new ArrayList<>();
-                Time lastEndTime = Time.valueOf("00:00:00");
-                List<Event> sortedList = new ArrayList<>(eventsPerRoom.get(soba));
+            for (String room : eventsPerRoom.keySet()) {
+                StringBuilder timeSlots = new StringBuilder();
+                List<Event> sortedList = new ArrayList<>(eventsPerRoom.get(room));
                 sortedList.sort(Comparator.comparing(Event::getStartTime));
+
+                Time lastEndTime = Time.valueOf("00:00:00");
+
                 for (Event event : sortedList) {
-
                     if (!event.getStartTime().equals(lastEndTime)) {
-                        Triple<Date, Pair<Time,Time>, String> triple = Triple.of(event.getDate(), Pair.of(lastEndTime, event.getStartTime()), event.getRoom().getName());
-                        gaps.add(triple);
+                        if (timeSlots.length() > 0) {
+                            timeSlots.append(", ");
+                        }
+                        timeSlots.append(lastEndTime).append("-").append(event.getStartTime());
                     }
-
                     lastEndTime = event.getEndTime();
                 }
 
-                if (!lastEndTime.equals(Time.valueOf("23:59:59"))){
-                    Triple<Date, Pair<Time,Time>, String> triple = Triple.of(sortedList.get(sortedList.size()-1).getDate(), Pair.of(sortedList.get(sortedList.size()-1).getEndTime(), Time.valueOf("23:59:59")), sortedList.get(sortedList.size()-1).getRoom().getName());
-                    gaps.add(triple);
+                if (!lastEndTime.equals(Time.valueOf("23:59:59"))) {
+                    if (timeSlots.length() > 0) {
+                        timeSlots.append(", ");
+                    }
+                    timeSlots.append(lastEndTime).append("-").append("23:59:59");
                 }
-                System.out.println(day + " \n" + gaps);
-                gapsByDay.put(day, gaps);
+
+                String formattedDate = dateFormatter.format(sortedList.get(0).getDate());
+                Pair<String, String> roomDatePair = Pair.of(room, formattedDate);
+
+                availableTimes.computeIfAbsent(roomDatePair, k -> new ArrayList<>());
+                availableTimes.get(roomDatePair).add(timeSlots.toString());
+
+                // Ispis termina za svaku sobu
+                System.out.println("Soba: " + room + ", Datum: " + formattedDate + " - Termini: " + timeSlots);
             }
         }
-        return gapsByDay;
+        return availableTimes;
     }
-
 }

@@ -1,18 +1,18 @@
-import eventColection.ScheduleManagerImp;
+//import eventColection.ScheduleManagerImp;
 import scheduleManager.ScheduleManager;
 
-//import weeklyColection.ScheduleManagerImp;
+import weeklyColection.ScheduleManagerImp;
 
 public class Main {
     public static void main(String[] args) {
         ScheduleManagerImp scheduleManagerImp = new ScheduleManagerImp();
         scheduleManagerImp.loadScheduleFromFile();
-        scheduleManagerImp.findAvailableTime();
-        scheduleManagerImp.loadRoomsFromFile();
-        //System.out.println(scheduleManagerImp.findAvailableTime());
         //scheduleManagerImp.findAvailableTime();
-
+        //scheduleManagerImp.loadRoomsFromFile();
+        //System.out.println(scheduleManagerImp.findAvailableTime());
+        scheduleManagerImp.findAvailableTime();
         //scheduleManagerImp.ispis();
+        //scheduleManagerImp.searchAdditionalData("Tip:D,Predmet:Uvod u programiranje");
 
         /*scheduleManagerImp.addEvent("Soba123,2023-10-10,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5");
         System.out.println("Nakon dodavanja\n\n\n\n\n\n\n");
