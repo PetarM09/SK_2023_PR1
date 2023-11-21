@@ -56,25 +56,9 @@ public class Schedule {
         return events;
     }
 
-    public List<Event> sortByAdditionalData(String kriterijum1) {
-        String[] token = kriterijum1.split(":");
-        if (token.length != 2) {
-            throw new IllegalArgumentException("Kriterijum mora biti u formatu kljuc:vrednost");
-        }
-
-        return schedule.stream()
-                .filter(e -> e.getAdditionalData().containsKey(token[0]) && e.getAdditionalData().get(token[0]).equals(token[1]))
-                .sorted(Comparator
-                        .comparing((Event e) -> e.getAdditionalData().get(token[0]))
-                        .thenComparing(Event::getDate)
-                        .thenComparing(Event::getDateTo))
-                .collect(Collectors.toList());
-    }
-
-    public List<Event> getEventsByDay(DayOfWeek day){
+    public List<Event> getEventsByDay(DayOfWeek day, List<Event> listaEvent){
         List<Event> events = new ArrayList<>();
-
-        for (Event event : schedule){
+        for (Event event : listaEvent){
             if (event.getDayOfWeek() == day){
                 events.add(event);
             }

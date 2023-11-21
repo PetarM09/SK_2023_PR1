@@ -8,6 +8,7 @@ import java.time.DayOfWeek;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 @Setter
 @Getter
@@ -75,5 +76,18 @@ public class Event {
                 ", dan u nedelji=" + dayOfWeek +
                  additionalData +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Event event = (Event) o;
+        return Objects.equals(date, event.date) && Objects.equals(room, event.room) && Objects.equals(startTime, event.startTime) && Objects.equals(endTime, event.endTime) && dayOfWeek == event.dayOfWeek && Objects.equals(additionalData, event.additionalData);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(date, room, startTime, endTime, dayOfWeek, additionalData);
     }
 }

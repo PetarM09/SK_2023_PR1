@@ -24,12 +24,27 @@ import java.util.*;
 
 
 public class ScheduleManagerImp extends ScheduleManager {
+
+    /**
+     * Metoda koja kreira događaj na osnovu podataka iz fajla
+     * @paramDate Datum događaja
+     * @paramDateTo Datum do kog traje događaj
+     * @paramRoom Sala u kojoj se događaj održava
+     * @paramDayOfWeek Dan u nedelji kada se događaj održava
+     * @paramStartTime Vreme početka događaja
+     * @paramEndTime Vreme kraja događaja
+     * @paramAdditionalData Dodatni podaci o događaju
+     * @return Kreirani događaj
+     */
+
     @Override
     protected boolean loadScheduleFromJSONFile() {
         schedule = initializeSchedule();
         Scanner scanner = new Scanner(System.in);
         Event event = null;
         String jsonFile = scanner.nextLine();
+        System.out.println("Unesite datume od kad do kad vazi raspored i zatim izuzete dane");
+        getDatesAndExceptedDays();
         Map<String, String> additionalData = new HashMap<>();
 
         try {
@@ -80,6 +95,8 @@ public class ScheduleManagerImp extends ScheduleManager {
         schedule = initializeSchedule();
         Scanner scanner = new Scanner(System.in);
         String csvFile = scanner.nextLine();
+        System.out.println("Unesite datume od kad do kad vazi raspored i zatim izuzete dane");
+        getDatesAndExceptedDays();
 
         List<Event> events = new ArrayList<>();
         try (CSVReader csvReader = new CSVReaderBuilder(new FileReader(csvFile)).build()) {
@@ -139,10 +156,10 @@ public class ScheduleManagerImp extends ScheduleManager {
         }
     }
 
-    public List<Event> getNesto() {
+    private List<Event> getNesto(List<Event> listaEventa) {
         List<Event> events = new ArrayList<>();
         for (DayOfWeek day : DayOfWeek.values()) {
-            List<Event> eventsForDay = schedule.getEventsByDay(day);
+            List<Event> eventsForDay = schedule.getEventsByDay(day, listaEventa);
             Map<String, List<Event>> eventsPerRoom = sortEventsByRoom(eventsForDay);
 
             for (String room : eventsPerRoom.keySet()) {
@@ -180,20 +197,20 @@ public class ScheduleManagerImp extends ScheduleManager {
     }
 
     @Override
-    public Map<Pair<String, String>, List<String>> findAvailableTime() {
+    public Map<Pair<String, String>, List<String>> findAvailableTime(List<Event> listaEventa) {
         Map<Pair<String, String>, List<String>> availableTimes = new HashMap<>();
-        SimpleDateFormat dateFormatter = new SimpleDateFormat("E MMM dd yyyy");
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
 
-        List<Event> sortedList = new ArrayList<>(getNesto());
+        List<Event> sortedList = new ArrayList<>(getNesto(listaEventa));
 
         StringBuilder timeSlots = new StringBuilder();
 
         Time lastEndTime = Time.valueOf("00:00:00");
+        if(sortedList.isEmpty())
+            return availableTimes;
         Date lastDate = sortedList.get(0).getDate();
         Event lastEvent = null;
 
-        for(var x : sortedList)
-            System.out.println(x);
         for (Event event : sortedList) {
             if (!event.getDate().equals(lastDate)) {
                 if (timeSlots.length() > 0) {
@@ -209,8 +226,6 @@ public class ScheduleManagerImp extends ScheduleManager {
                 availableTimes.computeIfAbsent(roomDatePair, k -> new ArrayList<>());
                 availableTimes.get(roomDatePair).add(timeSlots.toString());
 
-                // Ispis termina za svaku sobu
-                System.out.println("Soba: " + lastEvent.getRoom().getName() + ", Datum: " + formattedDate + " - Termini: " + timeSlots);
                 timeSlots.setLength(0);
             }
             if (!event.getStartTime().equals(lastEndTime)) {
@@ -238,8 +253,7 @@ public class ScheduleManagerImp extends ScheduleManager {
         availableTimes.computeIfAbsent(roomDatePair, k -> new ArrayList<>());
         availableTimes.get(roomDatePair).add(timeSlots.toString());
 
-        // Ispis termina za svaku sobu
-        System.out.println("Soba: " + lastEvent.getRoom().getName() + ", Datum: " + formattedDate + " - Termini: " + timeSlots);
+
         return availableTimes;
     }
 

@@ -21,10 +21,6 @@ import java.util.*;
 
 @Getter
 public class ScheduleManagerImp extends ScheduleManager {
-
-    public Schedule getSchedule() {
-        return schedule;
-    }
     @Override
     protected boolean loadScheduleFromJSONFile() {
         schedule = new Schedule();
@@ -132,12 +128,12 @@ public class ScheduleManagerImp extends ScheduleManager {
     }
 
     @Override
-    public Map<Pair<String, String>, List<String>> findAvailableTime() { //IMPLE1
+    public Map<Pair<String, String>, List<String>> findAvailableTime(List<Event> listaEventa) { //IMPLE1
         Map<Pair<String, String>, List<String>> availableTimes = new HashMap<>();
-        SimpleDateFormat dateFormatter = new SimpleDateFormat("E MMM dd yyyy");
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
 
         for (DayOfWeek day : DayOfWeek.values()) {
-            List<Event> eventsForDay = schedule.getEventsByDay(day);
+            List<Event> eventsForDay = schedule.getEventsByDay(day, listaEventa);
             Map<String, List<Event>> eventsPerRoom = sortEventsByRoom(eventsForDay);
 
             for (String room : eventsPerRoom.keySet()) {
@@ -147,6 +143,9 @@ public class ScheduleManagerImp extends ScheduleManager {
                         Comparator.comparing(Event::getDate)
                                 .thenComparing(Event::getStartTime)
                 );
+
+                if(sortedList.isEmpty())
+                    return availableTimes;
 
                 Time lastEndTime = Time.valueOf("00:00:00");
                 Date lastDate = sortedList.get(0).getDate();
@@ -166,8 +165,6 @@ public class ScheduleManagerImp extends ScheduleManager {
                         availableTimes.computeIfAbsent(roomDatePair, k -> new ArrayList<>());
                         availableTimes.get(roomDatePair).add(timeSlots.toString());
 
-                        // Ispis termina za svaku sobu
-                        System.out.println("Soba: " + room + ", Datum: " + formattedDate + " - Termini: " + timeSlots);
                         timeSlots.setLength(0);
                     }
                     if (!event.getStartTime().equals(lastEndTime)) {
@@ -195,8 +192,6 @@ public class ScheduleManagerImp extends ScheduleManager {
                 availableTimes.computeIfAbsent(roomDatePair, k -> new ArrayList<>());
                 availableTimes.get(roomDatePair).add(timeSlots.toString());
 
-                // Ispis termina za svaku sobu
-                System.out.println("Soba: " + room + ", Datum: " + formattedDate + " - Termini: " + timeSlots);
             }
         }
         return availableTimes;
