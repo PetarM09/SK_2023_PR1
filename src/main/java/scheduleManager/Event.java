@@ -50,6 +50,9 @@ public class Event {
         this(date, room, startTime, endTime, dayOfWeek);
         this.dateTo = dateTo;
     }
+    public Event(){
+
+    }
 
     @Override
     public String toString() {

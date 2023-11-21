@@ -12,12 +12,14 @@ import java.util.stream.Collectors;
 
 public class Schedule {
     private List<Event> schedule;
-    private Date startDate;
-    private Date endDate;
+    private Calendar startDate;
+    private Calendar endDate;
     private List<Date> exceptions;
 
 
     public Schedule() {
+        startDate = Calendar.getInstance();
+        endDate = Calendar.getInstance();
         schedule = new ArrayList<>();
         this.exceptions = new ArrayList<>();
     }

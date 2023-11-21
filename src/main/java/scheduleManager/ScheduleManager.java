@@ -1,7 +1,5 @@
 package scheduleManager;
 
-import com.fasterxml.jackson.core.PrettyPrinter;
-import com.fasterxml.jackson.core.exc.StreamWriteException;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -19,7 +17,6 @@ import com.opencsv.exceptions.CsvException;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.commons.lang3.tuple.Triple;
 
 import java.io.*;
 import java.sql.Time;
@@ -36,8 +33,9 @@ public abstract class ScheduleManager {
     protected List<Room>rooms = new ArrayList<>();
     protected String input;
     public static Schedule schedule = null;
-    protected abstract void loadScheduleFromJSONFile();
-    protected abstract void loadScheduleFromCSVFile();
+    protected abstract boolean loadScheduleFromJSONFile();
+    protected abstract boolean loadScheduleFromCSVFile();
+    protected abstract Map<Pair<String, String>, List<String>> findAvailableTime();
 
     protected static Schedule initializeSchedule(){
         if (schedule == null) {
@@ -53,7 +51,7 @@ public abstract class ScheduleManager {
             System.out.println(event);
         }
     }
-    private Event parser(String input){
+    private Event parser(String input){ //IMPLEMENTACIJA
         // Primer formata stringa: "Soba123,2023-10-15,08:00,10:00, Dodatne informacije1:2, Dodatna informacija 2:5"
         // Primer formata stringa: "Soba123,2023-10-15,08:00,2,Dodatne informacije1:2, Dodatna informacija 2:5"
         // Primer formata stringa: "Soba123,2023-10-15,08:00,10:00"
@@ -117,7 +115,7 @@ public abstract class ScheduleManager {
             return new Event(date, dateTo, room, startTime, endTime, dayOfWeek, additionalData);
     }
 
-    protected Event findEvent(String input){
+    protected Event findEvent(String input){ ///IMPLEMENTACIJE
             //Room:Vremepocetka:Datum
             Event found;
             String[] parts = input.split(",");
@@ -244,8 +242,8 @@ public abstract class ScheduleManager {
         Scanner scanner = new Scanner(System.in);
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         try {
-            schedule.setStartDate(format.parse(scanner.nextLine()));
-            schedule.setEndDate(format.parse(scanner.nextLine()));
+            schedule.getStartDate().setTime(format.parse(scanner.nextLine()));
+            schedule.getEndDate().setTime(format.parse(scanner.nextLine()));
             System.out.println("Unesite datume koje zelite da izuzmete (END za kraj):");
             String izuzati_dani = scanner.nextLine();
             while(!izuzati_dani.equals("END")){
@@ -325,17 +323,26 @@ public abstract class ScheduleManager {
         return events;
     }
 
-    public void loadScheduleFromFile(){
+    public boolean loadScheduleFromFile() {
         System.out.println("Kog formata je raspored koji zelite da ucitate?");
         System.out.println("1. JSON");
         System.out.println("2. CSV");
         Scanner scanner = new Scanner(System.in);
         String format = scanner.nextLine();
         System.out.println("Unesite putanju do fajla: ");
-        if(format.equals("1"))
-            loadScheduleFromJSONFile();
-        else if(format.equals("2"))
-            loadScheduleFromCSVFile();
+        if (format.equals("1")) {
+            if (loadScheduleFromJSONFile()) {
+                System.out.println("Unesite datume od kad do kad vazi raspored i zatim izuzete dane");
+                getDatesAndExceptedDays();
+                return true;
+            }
+        } else if (format.equals("2"))
+            if (loadScheduleFromCSVFile()) {
+                System.out.println("Unesite datume od kad do kad vazi raspored i zatim izuzete dane");
+                getDatesAndExceptedDays();
+                return true;
+            }
+        return false;
     }
 
     public void saveSchedule(){
@@ -502,12 +509,10 @@ public abstract class ScheduleManager {
     }
 
     private boolean doesEventExist(String input){
-
         if (findEvent(input) != null){
             System.out.println("Termin koji ste uneli je zauzet.\n");
             return true;
         }
-
         return false;
     }
 
@@ -529,6 +534,7 @@ public abstract class ScheduleManager {
 
         for (Event event : events) {
             Map<String, String> data = event.getAdditionalData();
+            data.putAll(event.getRoom().getAdditionalData());
             boolean matchesAllFilters = true;
 
             for (Map.Entry<String, String> filter : filters.entrySet()) {
@@ -545,12 +551,13 @@ public abstract class ScheduleManager {
                 found.add(event);
                 System.out.println(event);
             }
+            data.clear();
         }
 
         return found;
     }
 
-    private Map<String, List<Event>> sortEventsByRoom(List<Event> events){
+    protected Map<String, List<Event>> sortEventsByRoom(List<Event> events){
         Map<String, List<Event>> eventsPerRoom = new HashMap<>();
         for (Event event : events) {
 
@@ -562,51 +569,5 @@ public abstract class ScheduleManager {
         }
         
         return eventsPerRoom;
-    }
-
-    //Pretrazivanje slobodnih termina
-    public Map<Pair<String, String>, List<String>> findAvailableTime() {
-        Map<Pair<String, String>, List<String>> availableTimes = new HashMap<>();
-        SimpleDateFormat dateFormatter = new SimpleDateFormat("E MMM dd yyyy");
-
-        for (DayOfWeek day : DayOfWeek.values()) {
-            List<Event> eventsForDay = schedule.getEventsByDay(day);
-            Map<String, List<Event>> eventsPerRoom = sortEventsByRoom(eventsForDay);
-
-            for (String room : eventsPerRoom.keySet()) {
-                StringBuilder timeSlots = new StringBuilder();
-                List<Event> sortedList = new ArrayList<>(eventsPerRoom.get(room));
-                sortedList.sort(Comparator.comparing(Event::getStartTime));
-
-                Time lastEndTime = Time.valueOf("00:00:00");
-
-                for (Event event : sortedList) {
-                    if (!event.getStartTime().equals(lastEndTime)) {
-                        if (timeSlots.length() > 0) {
-                            timeSlots.append(", ");
-                        }
-                        timeSlots.append(lastEndTime).append("-").append(event.getStartTime());
-                    }
-                    lastEndTime = event.getEndTime();
-                }
-
-                if (!lastEndTime.equals(Time.valueOf("23:59:59"))) {
-                    if (timeSlots.length() > 0) {
-                        timeSlots.append(", ");
-                    }
-                    timeSlots.append(lastEndTime).append("-").append("23:59:59");
-                }
-
-                String formattedDate = dateFormatter.format(sortedList.get(0).getDate());
-                Pair<String, String> roomDatePair = Pair.of(room, formattedDate);
-
-                availableTimes.computeIfAbsent(roomDatePair, k -> new ArrayList<>());
-                availableTimes.get(roomDatePair).add(timeSlots.toString());
-
-                // Ispis termina za svaku sobu
-                System.out.println("Soba: " + room + ", Datum: " + formattedDate + " - Termini: " + timeSlots);
-            }
-        }
-        return availableTimes;
     }
 }

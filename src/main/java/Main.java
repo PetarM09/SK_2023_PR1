@@ -6,11 +6,10 @@ import weeklyColection.ScheduleManagerImp;
 public class Main {
     public static void main(String[] args) {
         ScheduleManagerImp scheduleManagerImp = new ScheduleManagerImp();
-        scheduleManagerImp.loadScheduleFromFile();
         //scheduleManagerImp.findAvailableTime();
         //scheduleManagerImp.loadRoomsFromFile();
         //System.out.println(scheduleManagerImp.findAvailableTime());
-        scheduleManagerImp.findAvailableTime();
+        //scheduleManagerImp.findAvailableTime();
         //scheduleManagerImp.ispis();
         //scheduleManagerImp.searchAdditionalData("Tip:D,Predmet:Uvod u programiranje");
 
@@ -28,5 +27,12 @@ public class Main {
         {
             System.out.println(x);
         }*/
+
+        while (true){
+            if(scheduleManagerImp.loadScheduleFromFile())
+                break;
+        }
+        scheduleManagerImp.findAvailableTime();
+
     }
 }
